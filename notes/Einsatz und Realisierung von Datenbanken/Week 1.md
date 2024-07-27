@@ -1,0 +1,2 @@
+- [ ] watch lecture
+- [ ] look at sheet 📅 2024-04-25 

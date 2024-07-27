@@ -1,0 +1,256 @@
+{
+  "main": {
+    "id": "f8d74883b3772cf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "05fee9515139bc8b",
+        "type": "tabs",
+        "dimension": 23.2807570977918,
+        "children": [
+          {
+            "id": "6dbf690f2ab30217",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Slotted Pages/Details.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b79aa351df95fa8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation/Push Model.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "fcbbae4b73080dd3",
+        "type": "tabs",
+        "dimension": 76.71924290220821,
+        "children": [
+          {
+            "id": "05e7edcadfb6402c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/Data Structure Engineering/Exam Q&A 25.07..md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "76b4b1b1bdfce7c5",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
+                "viewState": {
+                  "x": 1110.2120224878192,
+                  "y": 658.4998272717299,
+                  "zoom": -1.6720091579221628
+                }
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "63fff9554296a826",
+    "type": "split",
+    "children": [
+      {
+        "id": "b579282cc19c1a30",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f97270d043fae31a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3045eb4634536b98",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "7747e5c500a927b1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 237.50260543823242
+  },
+  "right": {
+    "id": "f4e7b405e0ddf651",
+    "type": "split",
+    "children": [
+      {
+        "id": "20e25fff190738e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df2d9ad402c40518",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1b27d76d45b79898",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1300c6f0134c5a38",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5f897c6b27de7b3e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas"
+              }
+            }
+          },
+          {
+            "id": "7cd71430fed651bd",
+            "type": "leaf",
+            "state": {
+              "type": "ReferenceListView",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 285.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "76b4b1b1bdfce7c5",
+  "lastOpenFiles": [
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Slotted Pages/Details.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Things to practice.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
+    "notes/DBS + moderne CPU-Architekturen/1. Classic DBMS architecture/1.1 Storage.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Questions.md",
+    "notes/DBS + moderne CPU-Architekturen/2. Efficient Query Processing/2.2 Algebraic operators.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Algebraic Opertoars/Details.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Algebraic Opertoars",
+    "Pasted image 20240725235329.png",
+    "Pasted image 20240725235302.png",
+    "Pasted image 20240725235232.png",
+    "notes/DBS + moderne CPU-Architekturen/2. Efficient Query Processing/2.1 Set oriented query processing.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Multi-Level Extendible Hashing.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation/Push Model.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Compression/Details.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Linear Hashing.md",
+    "Pasted image 20240725201940.png",
+    "Pasted image 20240725201240.png",
+    "notes/DBS + moderne CPU-Architekturen/1. Classic DBMS architecture/1.2 Access Paths.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Extendible Hashing.md",
+    "Pasted image 20240725192332.png",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing",
+    "notes/Data Structure Engineering/Exam Q&A 25.07..md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Prefix B⁺-tree.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Variable length records.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Bulkloading.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Concurrent Access.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Details.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Buffer Manager/Details.md",
+    "Pasted image 20240724180204.png",
+    "Pasted image 20240724180013.png",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Compression",
+    "Pasted image 20240724173412.png",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Segments/Details.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Slotted Pages",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/FSI/Details.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/FSI",
+    "notes/NLP lab/Background Info.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Segments",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Buffer Manager",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Color coding.md",
+    "notes/DBS + moderne CPU-Architekturen/modernDBS.md",
+    "Pasted image 20240709152338.png"
+  ]
+}

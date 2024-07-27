@@ -1,0 +1,376 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "wo3iGDwTJhpHcIr0hpJpO",
+      "name": "blue",
+      "value": "#b8c9ff"
+    },
+    {
+      "id": "Hswdh9EYUsVCBRWQ9hc8I",
+      "name": "purple",
+      "value": "#daadff"
+    },
+    {
+      "id": "UC_JaIIooddMaAt-adIGS",
+      "name": "pink",
+      "value": "#ffa3eb"
+    },
+    {
+      "id": "ax7OKoo7-DjYUxuWJynSJ",
+      "name": "orange",
+      "value": "#ffba6b"
+    },
+    {
+      "id": "ksh9mKuQvLntc_BsgTAB_",
+      "name": "green",
+      "value": "#99ffb3"
+    },
+    {
+      "id": "D_9TiMY4TKTCilaukDdhB",
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "id": "eVysdvDbQ2c6LagFwycEE",
+      "name": "dark",
+      "value": "#5c5c5c"
+    },
+    {
+      "id": "UgqQ5ACnODCVx8kjfXPcB",
+      "name": "turquoise",
+      "value": "#8afdff"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "notes/Advanced NLP",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/Causal Inference in Time Series",
+      "color": "wo3iGDwTJhpHcIr0hpJpO"
+    },
+    {
+      "path": "notes/NLP lab",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/Data Structure Engineering",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/Einsatz und Realisierung von Datenbanken",
+      "color": "ax7OKoo7-DjYUxuWJynSJ"
+    },
+    {
+      "path": "notes/IDP",
+      "color": "UC_JaIIooddMaAt-adIGS"
+    },
+    {
+      "path": "notes/TODOs.md",
+      "color": "D_9TiMY4TKTCilaukDdhB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Lecture Orga.md",
+      "color": "D_9TiMY4TKTCilaukDdhB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Lecture Intro.md",
+      "color": "D_9TiMY4TKTCilaukDdhB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/Assignment 1. Debugging.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/Exercise Orga.md",
+      "color": "D_9TiMY4TKTCilaukDdhB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/1. Modern CPUs.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/Advanced NLP/1. LLMS",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/Advanced NLP/1. LLMS/1. LLMs.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/Advanced NLP/1. LLMS/1.1 Timeline.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/Advanced NLP/1. LLMS/1.2 Attention and Transformers.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/Advanced NLP/1. LLMS/1.3 BERT and GPT.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/Advanced NLP/1. LLMS/1.4 Following LLMs.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/Advanced NLP/1. LLMS/1.5 Trends.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/0. Intro",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/0. Intro/Intro.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/0. Intro/Motivational Example.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/0. Intro/Recap Relational Algebra.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/0. Intro/Set-oriented processing.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/0. Intro/Traditional Assumptions.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/Advanced NLP/Orga.md",
+      "color": "D_9TiMY4TKTCilaukDdhB"
+    },
+    {
+      "path": "notes/Advanced NLP/Advanced NLP.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/modernDBS.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/images",
+      "color": "eVysdvDbQ2c6LagFwycEE"
+    },
+    {
+      "path": "notes/Advanced NLP/images",
+      "color": "eVysdvDbQ2c6LagFwycEE"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Exercises",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Exercises/Exercise 1. External Sort.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Orga.md",
+      "color": "D_9TiMY4TKTCilaukDdhB"
+    },
+    {
+      "path": "notes/NLP lab/Pre-first session.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/research/CausaLM.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/research",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/1. Classic DBMS architecture/1.1 Storage.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/1. Classic DBMS architecture",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/1. Classic DBMS architecture/1. Classic DBMS architecture.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/NLP lab/research/Domains/Medical POS.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/research/Papers for first meeting.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/research/Domains/MatSciNLP.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/images",
+      "color": "eVysdvDbQ2c6LagFwycEE"
+    },
+    {
+      "path": "notes/NLP lab/images/papers",
+      "color": "eVysdvDbQ2c6LagFwycEE"
+    },
+    {
+      "path": "notes/NLP lab/Topic preferences.md",
+      "color": "eVysdvDbQ2c6LagFwycEE"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/images",
+      "color": "eVysdvDbQ2c6LagFwycEE"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/Assignment 2. Hashtable.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/1. Classic DBMS architecture/1.2 Access Paths.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Exercises/Exercise 2. Buffer Manager.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/Data Structure Engineering/2.1 Hash tables.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/2. In-memory data structures.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/2.2 Search trees.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/Assignment 3. B-Tree.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Exercises/Exercise 3. Slotted Pages.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/Assignment 4. Slotted Pages.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/NLP lab/Hashtags.md",
+      "color": "D_9TiMY4TKTCilaukDdhB"
+    },
+    {
+      "path": "notes/NLP lab/research/Domains/Initial search for domains and datasets.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/meetings/Meeting Notes.md",
+      "color": "D_9TiMY4TKTCilaukDdhB"
+    },
+    {
+      "path": "notes/NLP lab/research/Domains",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/research/RE",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/research/Datasets",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/research/RE/Causal Relationship Extraction.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/NLP lab/research/RE/CASE 2023 Task 3. Event Causality Identification.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/Assignment 5. ART.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/Data Structure Engineering/2.3 Tries.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/2. Efficient Query Processing/2.1 Set oriented query processing.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/2. Efficient Query Processing",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/Assignment 6. Concurrent Counter.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/2. Efficient Query Processing/2.2 Algebraic operators.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Exercises/Exercise 4. B-Tree.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Exercises/Exercise 5. Algebraic Operators.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/Data Structure Engineering/Exercise/Assignment 7.md",
+      "color": "UgqQ5ACnODCVx8kjfXPcB"
+    },
+    {
+      "path": "notes/NLP lab/working notes",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/3. Hardware Trends/3.1 Re-designing storage.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/NLP lab/Background Info.md",
+      "color": "Hswdh9EYUsVCBRWQ9hc8I"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Buffer Manager/Details.md",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Summary",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Summary/Color coding.md",
+      "color": "eVysdvDbQ2c6LagFwycEE"
+    },
+    {
+      "path": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Buffer Manager",
+      "color": "ksh9mKuQvLntc_BsgTAB_"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "callouts": {
+    "custom": [
+      "star",
+      "idea",
+      "int",
+      "def",
+      "goal",
+      "imp",
+      "hyp",
+      "prob"
+    ],
+    "settings": {
+      "info": [
+        {
+          "changes": {
+            "icon": "lucide-stars"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "112, 89, 136"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "185, 145, 227"
+          }
+        }
+      ],
+      "star": [
+        {
+          "changes": {
+            "icon": "lucide-stars",
+            "color": "170, 118, 213"
+          }
+        }
+      ],
+      "idea": [
+        {
+          "changes": {
+            "icon": "lucide-lightbulb",
+            "color": "139, 175, 249"
+          }
+        }
+      ],
+      "int": [
+        {
+          "changes": {
+            "icon": "lucide-moon",
+            "color": "233, 144, 187"
+          }
+        }
+      ],
+      "def": [
+        {
+          "changes": {
+            "icon": "lucide-sticky-note",
+            "color": "128, 176, 255"
+          }
+        }
+      ],
+      "goal": [
+        {
+          "changes": {
+            "icon": "lucide-star",
+            "color": "173, 173, 173"
+          }
+        }
+      ],
+      "imp": [
+        {
+          "changes": {
+            "icon": "lucide-zap",
+            "color": "255, 195, 128"
+          }
+        }
+      ],
+      "hyp": [
+        {
+          "changes": {
+            "icon": "lucide-rainbow",
+            "color": "114, 253, 200"
+          }
+        }
+      ],
+      "quote": [
+        {
+          "changes": {
+            "icon": "lucide-star"
+          }
+        }
+      ],
+      "prob": [
+        {
+          "changes": {
+            "icon": "lucide-star"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "222, 222, 222"
+          }
+        }
+      ],
+      "tip": [
+        {
+          "changes": {
+            "color": "224, 190, 144"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidianFallbackForced": false,
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

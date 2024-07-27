@@ -1,0 +1,12 @@
+{
+  "pathToPandoc": "/usr/bin/pandoc",
+  "tooltipDelay": 300,
+  "zoteroGroups": [],
+  "renderCitations": true,
+  "renderCitationsReadingMode": true,
+  "renderLinkCitations": true,
+  "pathToBibliography": "/home/rai/Uni/SoSe2024/lit.bib",
+  "enableCiteKeyCompletion": true,
+  "showCitekeyTooltips": true,
+  "hideLinks": false
+}

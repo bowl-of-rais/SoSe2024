@@ -1,0 +1,8 @@
+- B-trees: what exactly does clustering mean in this context
+- how does bulk update of B-trees work?
+	- naive version would be to read out leaves from existing tree, merge with new entries and then do bulk tree creation...
+	- wdym new chunk???
+- what were the advantages of b-trees again?
+- query operators: how exactly are registers implemented?
+	- in the exercise they were called registers but we still used references to the tuples, right?
+	- is the difference that when there's a pipeline break/aggregate, the materialized tuples are also stored in some global space instead of within the operator?

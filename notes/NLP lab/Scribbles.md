@@ -1,0 +1,1 @@
+I'm interested in how causality can be approached from a NLP perspective, as I've previously only encountered the concept in statistics classes. Also, the mentioning of argumentation mining in the topic description stood out to me, because I am a fan of logic/reasoning and seeing how we as humans use language to convey it.

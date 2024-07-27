@@ -1,0 +1,4 @@
+- purple: interface
+- blue: implementation
+- yellow: goal
+- white: component?
