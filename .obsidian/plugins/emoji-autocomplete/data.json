@@ -4,8 +4,9 @@
   "considerHistory": true,
   "historyLimit": 25,
   "history": [
-    "1234",
+    "global",
     "cd",
+    "1234",
     "m",
     "sad",
     "deciduous_tree",

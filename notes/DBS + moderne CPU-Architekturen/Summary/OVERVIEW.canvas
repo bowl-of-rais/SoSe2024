@@ -8,7 +8,7 @@
       },
       "x": 200,
       "y": -760,
-      "width": 3480,
+      "width": 3425,
       "height": 2260,
       "label": "Storage"
     },
@@ -23,6 +23,16 @@
       "label": "Access"
     },
     {
+      "id": "9550c7be8385ef82",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -4000,
+      "y": 3637,
+      "width": 2640,
+      "height": 1720,
+      "label": "Main-Memory Databases"
+    },
+    {
       "id": "bc8a458f81b7529e",
       "type": "group",
       "styleAttributes": {},
@@ -31,6 +41,16 @@
       "width": 3490,
       "height": 1240,
       "label": "Set-Oriented Query Processing"
+    },
+    {
+      "id": "08e9e4e17077ffe8",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -2640,
+      "y": 980,
+      "width": 2410,
+      "height": 1780,
+      "label": "Transactions + Recovery"
     },
     {
       "id": "d9b7e6fe27e2289a",
@@ -83,6 +103,16 @@
       "label": "Slotted Pages"
     },
     {
+      "id": "7162d1acf0fd5e63",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1268,
+      "y": 3637,
+      "width": 758,
+      "height": 1540,
+      "label": "Code Generation"
+    },
+    {
       "id": "795cdbea48e95476",
       "type": "group",
       "styleAttributes": {},
@@ -113,6 +143,16 @@
       "label": "Segments"
     },
     {
+      "id": "985e63f19881b135",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1590,
+      "y": 2090,
+      "width": 1080,
+      "height": 650,
+      "label": "Schedule Properties"
+    },
+    {
       "id": "c7f6002a3d5b3e56",
       "type": "group",
       "styleAttributes": {},
@@ -123,14 +163,44 @@
       "label": "Free Space Inventory"
     },
     {
+      "id": "4ae48ed215a159e5",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1268,
+      "y": 5304,
+      "width": 856,
+      "height": 680,
+      "label": "Parallel Query Execution"
+    },
+    {
+      "id": "1a1432443024a316",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -3277,
+      "y": 4577,
+      "width": 890,
+      "height": 540,
+      "label": "In-memory index structures"
+    },
+    {
       "id": "4e28f9173920ddd0",
       "type": "group",
       "styleAttributes": {},
-      "x": 2670,
-      "y": -590,
+      "x": 2640,
+      "y": -650,
       "width": 458,
       "height": 1020,
       "label": "Compression"
+    },
+    {
+      "id": "70b54871762d83c2",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 3130,
+      "y": -440,
+      "width": 451,
+      "height": 1020,
+      "label": "Long Records"
     },
     {
       "id": "1b1580da2b9aaf3b",
@@ -151,6 +221,26 @@
       "width": 1072,
       "height": 340,
       "label": "Sort"
+    },
+    {
+      "id": "6688ccd268251e01",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1551,
+      "y": 1320,
+      "width": 479,
+      "height": 720,
+      "label": "Concurrent execution problems"
+    },
+    {
+      "id": "dbb96ccd35df5c1d",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1570,
+      "y": 2160,
+      "width": 518,
+      "height": 560,
+      "label": "Serializability"
     },
     {
       "id": "f9a5d6e6ebdd415f",
@@ -193,6 +283,26 @@
       "label": "Non-Inner Joins"
     },
     {
+      "id": "b86789571345b11c",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -3175,
+      "y": 3857,
+      "width": 560,
+      "height": 400,
+      "label": "Hybrid systems"
+    },
+    {
+      "id": "28c7233cd6db685a",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1870,
+      "y": 1000,
+      "width": 1116,
+      "height": 180,
+      "label": "ACID"
+    },
+    {
       "id": "7ef59e1bf8e51969",
       "type": "group",
       "styleAttributes": {},
@@ -207,7 +317,7 @@
       "type": "group",
       "styleAttributes": {},
       "x": 1184,
-      "y": 1660,
+      "y": 1680,
       "width": 441,
       "height": 420,
       "label": "Bitmap indexes"
@@ -263,396 +373,384 @@
       "label": "Index Structures"
     },
     {
-      "id": "a3d3fc2658c55798",
+      "id": "e65dca0767f49f30",
       "type": "text",
-      "text": "### Dynamic extent mapping\n\n> pointers to ranges of pages -> best of both worlds: can grow with some overhead\n\n- grows exponentially\n- number of extents is bounded -> fits in page",
+      "text": "- nodes correspond to pages -> easy implementation\n- larger fanout than BSTs",
       "styleAttributes": {},
-      "x": 730,
-      "y": 1079,
-      "width": 372,
-      "height": 281
+      "x": 3300,
+      "y": 1690,
+      "width": 305,
+      "height": 140,
+      "color": "3"
     },
     {
-      "id": "32aa6feb6beb46e9",
+      "id": "d113d573f79058d3",
       "type": "text",
-      "text": "**update behavior**:\n- `force`: write all\n- `steal`: take memory\n",
+      "text": "### Vectorwise",
       "styleAttributes": {},
-      "x": 1350,
-      "y": -608,
+      "x": -3962,
+      "y": 3817,
       "width": 260,
+      "height": 60
+    },
+    {
+      "id": "726164c251349c38",
+      "type": "text",
+      "text": "### MonetDB\n",
+      "styleAttributes": {},
+      "x": -3962,
+      "y": 4027,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "311d991862195053",
+      "type": "text",
+      "text": "### DB2 BLU",
+      "styleAttributes": {},
+      "x": -3962,
+      "y": 4227,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "25489758bb0b5f41",
+      "type": "text",
+      "text": "### Dirty Read\n> T1 reads value written by T2, but T2 aborts",
+      "styleAttributes": {},
+      "x": -1531,
+      "y": 1600,
+      "width": 440,
+      "height": 120
+    },
+    {
+      "id": "c8891cf1b416fb56",
+      "type": "text",
+      "text": "### Recovery\n\n> data structures + ACID guarantees must survive crashes",
+      "styleAttributes": {},
+      "x": -835,
+      "y": 1482,
+      "width": 490,
+      "height": 188
+    },
+    {
+      "id": "51d2b41967fc1902",
+      "type": "text",
+      "text": "### Lost Update\n\n> T2 uses + writes back old value that is overwritten by T1 in the meantime",
+      "styleAttributes": {},
+      "x": -1531,
+      "y": 1430,
+      "width": 440,
       "height": 140
     },
     {
-      "id": "133b29e6c6012565",
+      "id": "aabbdabe84efe48f",
       "type": "text",
-      "text": "### Record Layout\n\n> instead of serializing, split tuples into fixed-sized header with pointer + tail\n",
+      "text": "**I**solation\n> running TAs are not aware of each other",
       "styleAttributes": {},
-      "x": 1536,
-      "y": -389,
-      "width": 455,
-      "height": 133
+      "x": -1314,
+      "y": 1020,
+      "width": 260,
+      "height": 130
     },
     {
-      "id": "e8b322d55e2fb53f",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/FSI/Details.md",
-      "styleAttributes": {},
-      "x": 2696,
-      "y": 780,
-      "width": 680,
-      "height": 660,
-      "color": "8"
-    },
-    {
-      "id": "f1d4b7a0954f003e",
+      "id": "6d2f376ef5c550f4",
       "type": "text",
-      "text": "finding space for incoming data",
+      "text": "serial execution would block all other TAs",
       "styleAttributes": {},
-      "x": 3251,
-      "y": 868,
-      "width": 310,
+      "x": -1531,
+      "y": 1350,
+      "width": 440,
       "height": 60,
       "color": "3"
     },
     {
-      "id": "71db577d903fe77e",
+      "id": "72c5e2dd32f82345",
       "type": "text",
-      "text": "- free space bitmap\n- allocation: find page with enough free space, allocate space, update FSI",
+      "text": "**C**onsistency\n> DB should always be consistent",
       "styleAttributes": {},
-      "x": 3251,
-      "y": 1005,
-      "width": 310,
-      "height": 140,
-      "color": "7"
+      "x": -1584,
+      "y": 1020,
+      "width": 260,
+      "height": 130
     },
     {
-      "id": "4999258d620a67e8",
+      "id": "72ec456a13ce5356",
       "type": "text",
-      "text": "- `fix(pageNo, shared)`\n- `unfix(pageNo, dirty)`",
+      "text": "**D**urability\n>committed transactions stay",
       "styleAttributes": {},
-      "x": 892,
-      "y": -362,
-      "width": 320,
-      "height": 80,
-      "color": "6"
+      "x": -1034,
+      "y": 1020,
+      "width": 260,
+      "height": 125
     },
     {
-      "id": "17081ade73d7b013",
+      "id": "9fadbbb651c22ee4",
       "type": "text",
-      "text": "- hash table of **buffer frames**\n- replaces pages in memory",
+      "text": "**A**tomicity\n>execute completely or not at all",
       "styleAttributes": {},
-      "x": 892,
-      "y": -233,
-      "width": 320,
+      "x": -1854,
+      "y": 1020,
+      "width": 260,
+      "height": 130
+    },
+    {
+      "id": "f3f47631524b7601",
+      "type": "text",
+      "text": "#### serializable iff SG acyclic",
+      "styleAttributes": {},
+      "x": -1481,
+      "y": 2400,
+      "width": 340,
+      "height": 60
+    },
+    {
+      "id": "317cd96140f37b9b",
+      "type": "text",
+      "text": "### Serializability Graph $SG(H)$\n\n- nodes: committed transactions\n- edges between conflicting operations in order",
+      "styleAttributes": {},
+      "x": -1531,
+      "y": 2540,
+      "width": 440,
+      "height": 160
+    },
+    {
+      "id": "f0164ea75e6b8bcf",
+      "type": "text",
+      "text": "### Avoiding cascading aborts\n>$T_i$ reads from $T_j$ then $c_j < r_i[x]$\n\naka a TA reads only from committed TAs",
+      "styleAttributes": {},
+      "x": -990,
+      "y": 2290,
+      "width": 400,
+      "height": 140
+    },
+    {
+      "id": "ff9b9a6ca573f55d",
+      "type": "text",
+      "text": "### Strictness\n>for any $w_j[x] < o_i[x]$ either $a_j < o_i[x]$ or $c_j < o_i[x]$\n\naka only read from and overwrite changes of committed TAs",
+      "styleAttributes": {},
+      "x": -990,
+      "y": 2470,
+      "width": 400,
+      "height": 200
+    },
+    {
+      "id": "2aad1d020479b4ef",
+      "type": "text",
+      "text": "### Phantom Problem\n> T2 inserts new tuple, which is seen by T1",
+      "styleAttributes": {},
+      "x": -1531,
+      "y": 1880,
+      "width": 440,
+      "height": 120
+    },
+    {
+      "id": "d3b322e041554924",
+      "type": "text",
+      "text": "# inner workings of queries",
+      "styleAttributes": {},
+      "x": -693,
+      "y": 1214,
+      "width": 260,
+      "height": 126
+    },
+    {
+      "id": "44f1ce2ba45c8d36",
+      "type": "text",
+      "text": "## high-level logic",
+      "styleAttributes": {},
+      "x": -380,
+      "y": 1055,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "304b006eba9b58ba",
+      "type": "text",
+      "text": "- roll back in-flight transactions\n- committed transactions must not be lost (even if not written to disk)",
+      "styleAttributes": {},
+      "x": -650,
+      "y": 1620,
+      "width": 400,
       "height": 100,
       "color": "7"
     },
     {
-      "id": "937214675b57c1a8",
+      "id": "b983b2d4a042b7fb",
       "type": "text",
-      "text": "manages pages\n- reduce I/O: keep active pages in memory, write back",
+      "text": "> $\\exists H_s$ s.t. $H_s$ serial and $C(H) \\equiv H_s$\n\naka conflict-equivalence (= same result) with a serial schedule",
       "styleAttributes": {},
-      "x": 892,
-      "y": -72,
-      "width": 320,
+      "x": -1530,
+      "y": 2200,
+      "width": 439,
       "height": 140,
-      "color": "3"
+      "color": "9"
     },
     {
-      "id": "496822119721f675",
+      "id": "859e75ab33061e20",
       "type": "text",
-      "text": "- *BTree was a Segment*\n- *Segments had their own buffer manager*\n- *segment id in 16 most significant bits, page id within segment in lower 48 bits*",
-      "styleAttributes": {
-        "border": "dotted"
-      },
-      "x": 245,
-      "y": 782,
-      "width": 325,
-      "height": 198,
-      "color": "7"
-    },
-    {
-      "id": "a7cb7fe386425a60",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/images/Pasted image 20240423145701.png",
+      "text": "### Non-Repeatable Read\n> T1 reads a value twice with different results",
       "styleAttributes": {},
-      "x": 500,
-      "y": 993,
-      "width": 141,
-      "height": 172
+      "x": -1531,
+      "y": 1740,
+      "width": 440,
+      "height": 120
     },
     {
-      "id": "063bf32a196d0b65",
+      "id": "c013e2009056b3ec",
       "type": "text",
-      "text": "### Static file mapping\n> start + length\n\nsimple but inflexible",
+      "text": "### Recoverability\n>$T_i$ reads from $T_j$ and $c_i \\in H$, then $c_j < c_i$ \n\naka a TA being read from must commit first",
       "styleAttributes": {},
-      "x": 245,
-      "y": 1020,
-      "width": 325,
-      "height": 172
+      "x": -990,
+      "y": 2110,
+      "width": 400,
+      "height": 140
     },
     {
-      "id": "a620e9e0c2479b72",
+      "id": "dda3222b73c6be3f",
       "type": "text",
-      "text": "**set of pages** treated as one entity\n- structures can span multiple pages\n- virtual address space",
+      "text": "### Conflict-Equivalence $H \\equiv H´$\n\n> same set of TAs + COs of non-aborted TAs are ordered the same way\n\naka same result",
       "styleAttributes": {},
-      "x": 245,
-      "y": 620,
-      "width": 325,
-      "height": 142,
-      "color": "3"
+      "x": -2381,
+      "y": 2250,
+      "width": 636,
+      "height": 150
     },
     {
-      "id": "ba5bb5eaa05a565b",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/images/Pasted image 20240423145741.png",
-      "styleAttributes": {},
-      "x": 1068,
-      "y": 1180,
-      "width": 144,
-      "height": 223
-    },
-    {
-      "id": "ddad787d51e55cb8",
+      "id": "a702ca4a2211eb9c",
       "type": "text",
-      "text": "### Dynamic block-mapping\n\npointers to single pages -> most flexible but a lot of overhead",
+      "text": "### Conflicting Operations\n\n> at least one write, on same data item\n\nmust NOT be executed in parallel",
       "styleAttributes": {},
-      "x": 245,
-      "y": 1220,
-      "width": 338,
-      "height": 143
-    },
-    {
-      "id": "4fe3ca9d57094282",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/images/Pasted image 20240423145809.png",
-      "styleAttributes": {},
-      "x": 550,
-      "y": 1260,
-      "width": 147,
-      "height": 143
-    },
-    {
-      "id": "18665ad50b656174",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Segments/Details.md",
-      "styleAttributes": {},
-      "x": 613,
-      "y": 600,
-      "width": 577,
-      "height": 460,
-      "color": "8"
-    },
-    {
-      "id": "bcae98ec2fe87e04",
-      "type": "text",
-      "text": "### NULL values\n\n> unknown/unspecified/OOD values\n\ninvalid value if possible or NULL bit",
-      "styleAttributes": {},
-      "x": 1708,
-      "y": -256,
-      "width": 355,
+      "x": -2063,
+      "y": 1920,
+      "width": 412,
       "height": 160
     },
     {
-      "id": "fc3485f7fad72c99",
+      "id": "e50aa5578ca092b8",
       "type": "text",
-      "text": "**shadow paging**: page table, copy w/ dirty pages. bye bye locality\n",
+      "text": "### Schedule\n> partial ordering",
       "styleAttributes": {},
-      "x": 1752,
-      "y": -650,
+      "x": -2475,
+      "y": 1620,
+      "width": 230,
+      "height": 120
+    },
+    {
+      "id": "7676937582680e14",
+      "type": "text",
+      "text": "### Transactions\n>sequence of operations combined into one compound operation\n\ncan be executed concurrently",
+      "styleAttributes": {},
+      "x": -2620,
+      "y": 1003,
+      "width": 520,
+      "height": 175
+    },
+    {
+      "id": "8fecf99007c37b09",
+      "type": "text",
+      "text": ">$T_i$ := partial order on operations with $<_i$\n- domain: reads/writes of data items, aborts, commits\n- abort xor commit\n- a/c are always last\n- definitive order of r/w of same data item (within 1 TA)\n",
+      "styleAttributes": {},
+      "x": -2560,
+      "y": 1300,
       "width": 400,
-      "height": 90
+      "height": 240,
+      "color": "9"
     },
     {
-      "id": "b4f2a1762d0e7758",
+      "id": "b2e36053096f912a",
       "type": "text",
-      "text": "**delta files**: pages copied on change. more IO",
+      "text": "allows for physical logging",
       "styleAttributes": {},
-      "x": 1752,
-      "y": -510,
-      "width": 400,
-      "height": 80
+      "x": -790,
+      "y": 2640,
+      "width": 260,
+      "height": 60
     },
     {
-      "id": "afee37ea12a932a3",
+      "id": "52007f0c0aa48b9c",
       "type": "text",
-      "text": "TODO: Long Records (ch3/24-28)",
+      "text": "### Merge\n\non-the-fly:\n- read in parallel\n- tree of losers/prio q -> always read smallest\n\nrepeated partial merges if too many runs",
       "styleAttributes": {},
-      "x": 2210,
-      "y": -636,
-      "width": 367,
-      "height": 56,
-      "color": "1"
-    },
-    {
-      "id": "f5985ee0d558d2e1",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Slotted Pages/Details.md",
-      "styleAttributes": {},
-      "x": 1610,
-      "y": 60,
-      "width": 684,
-      "height": 1380,
+      "x": 1480,
+      "y": 5644,
+      "width": 327,
+      "height": 300,
       "color": "8"
     },
     {
-      "id": "a3787a5c0e584308",
+      "id": "a815e35213513144",
       "type": "text",
-      "text": "- `allocate(min, max)`\n- `relocate(slot_id, data_size)`\n- `compactify()`\n- `erase(slot_id)`",
+      "text": "$\\Gamma$: aggregate values in groups",
       "styleAttributes": {},
-      "x": 2214,
-      "y": 380,
-      "width": 260,
-      "height": 173,
-      "color": "6"
-    },
-    {
-      "id": "2affff942175e560",
-      "type": "text",
-      "text": "- slots grow from one side (array), data from the other\n- compactification",
-      "styleAttributes": {},
-      "x": 2214,
-      "y": 868,
-      "width": 260,
-      "height": 147,
-      "color": "7"
-    },
-    {
-      "id": "03520edbf3f461cc",
-      "type": "text",
-      "text": "TODO: more implementation details",
-      "styleAttributes": {},
-      "x": 1057,
-      "y": 1046,
-      "width": 390,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "9338bd03ff72bc26",
-      "type": "text",
-      "text": "# storing data",
-      "styleAttributes": {},
-      "x": 120,
-      "y": -420,
-      "width": 260,
-      "height": 80
-    },
-    {
-      "id": "1dc96520bd08a93c",
-      "type": "text",
-      "text": "# memory management ",
-      "styleAttributes": {},
-      "x": 120,
-      "y": -570,
-      "width": 265,
-      "height": 105
-    },
-    {
-      "id": "3c55b9f3d03d5e5f",
-      "type": "text",
-      "text": "#### special cases for storing things",
-      "styleAttributes": {},
-      "x": 2172,
-      "y": -306,
-      "width": 405,
-      "height": 73,
-      "color": "8"
-    },
-    {
-      "id": "3ca2265f49e5aec8",
-      "type": "text",
-      "text": "- improve/reduce bandwidth consumption\n- compress individual tuples",
-      "styleAttributes": {},
-      "x": 2690,
-      "y": -570,
-      "width": 418,
+      "x": 1900,
+      "y": 5680,
+      "width": 286,
       "height": 80,
       "color": "3"
     },
     {
-      "id": "aef927c99becbb9c",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Compression/Details.md",
+      "id": "9671501d65502ed9",
+      "type": "text",
+      "text": "1. sort-based\n2. hash-based\n\nbeware of variable-length aggregates",
       "styleAttributes": {},
-      "x": 2690,
-      "y": -423,
-      "width": 418,
-      "height": 833
+      "x": 1900,
+      "y": 5784,
+      "width": 286,
+      "height": 160,
+      "color": "7"
     },
     {
-      "id": "b99940e85b8fec83",
+      "id": "2c01a79c7baa3b55",
       "type": "text",
-      "text": "store tuples -> actually use page",
+      "text": "### Concurrent execution\n- esp for multiple users\n- wait times: disk, user input, ...",
       "styleAttributes": {},
-      "x": 2210,
-      "y": 220,
+      "x": -2202,
+      "y": 1610,
+      "width": 345,
+      "height": 140
+    },
+    {
+      "id": "f2c5154d054691b5",
+      "type": "text",
+      "text": "### Schedule $H$ \n> partial order with $<_H$ over set of TAs $T$\n- $<_H$ is superset of $<_i$\n- definitive order of conflicting operations",
+      "styleAttributes": {},
+      "x": -2518,
+      "y": 1880,
+      "width": 315,
+      "height": 240,
+      "color": "9"
+    },
+    {
+      "id": "23938775162b2118",
+      "type": "text",
+      "text": "### Committed projections $C(H)$\n> committed TAs\n",
+      "styleAttributes": {},
+      "x": -2250,
+      "y": 2430,
+      "width": 441,
+      "height": 120
+    },
+    {
+      "id": "a4108b8faf66d10e",
+      "type": "text",
+      "text": "represented with DAG",
+      "styleAttributes": {},
+      "x": -2240,
+      "y": 1500,
+      "width": 240,
+      "height": 60
+    },
+    {
+      "id": "e8843b560edadc56",
+      "type": "text",
+      "text": "- `BOT`/`begin transaction`\n- `commit`\n- `abort`/`rollback`",
+      "styleAttributes": {},
+      "x": -2230,
+      "y": 1120,
       "width": 260,
-      "height": 73,
-      "color": "3"
-    },
-    {
-      "id": "99841cd221f067b5",
-      "type": "text",
-      "text": "TODO: data types",
-      "styleAttributes": {},
-      "x": 1933,
-      "y": 100,
-      "width": 260,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "f7e1a26682fb776f",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Buffer Manager/Details.md",
-      "styleAttributes": {},
-      "x": 490,
-      "y": -640,
-      "width": 602,
-      "height": 1135,
-      "color": "8"
-    },
-    {
-      "id": "7955b240d11570c4",
-      "type": "text",
-      "text": "### Multi-Dimensional Indexing\n\n**curse of dimensionality**: scan faster than indexing for high dim",
-      "styleAttributes": {},
-      "x": 763,
-      "y": 1661,
-      "width": 328,
-      "height": 179
-    },
-    {
-      "id": "3d37cea48b7c879a",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Multi-Level Extendible Hashing.md",
-      "styleAttributes": {},
-      "x": 1145,
-      "y": 2426,
-      "width": 400,
-      "height": 774
-    },
-    {
-      "id": "5b30828bbbfab1bf",
-      "type": "text",
-      "text": "### Non-unique values\n\n> index values have to be unique\n\n- append TID (= tiebreaker)\n- needs more space, but $\\mathcal{O}(\\log n)$ access",
-      "styleAttributes": {},
-      "x": 1764,
-      "y": 2632,
-      "width": 397,
-      "height": 181
-    },
-    {
-      "id": "c96094504859416f",
-      "type": "text",
-      "text": "A\nR\nC\nH\nI\nT\nE\nC\nT\nU\nR\nE",
-      "styleAttributes": {},
-      "x": 0,
-      "y": -760,
-      "width": 80,
-      "height": 4200,
-      "color": "4"
+      "height": 140,
+      "color": "6"
     },
     {
       "id": "56ee2dd1eba1de27",
@@ -673,72 +771,6 @@
       "y": 5680,
       "width": 540,
       "height": 260
-    },
-    {
-      "id": "9b779825ce16ee51",
-      "type": "text",
-      "text": "used in other operations",
-      "styleAttributes": {},
-      "x": 775,
-      "y": 5644,
-      "width": 260,
-      "height": 60,
-      "color": "3"
-    },
-    {
-      "id": "742cc94be2d7e953",
-      "type": "text",
-      "text": "### Flush\n\nnaive\n- sort in-mem using quicksort\n- write all at once\n\ncomplex\n- heap sort w/ replacement selection\n- write out when needed -> longer runs",
-      "styleAttributes": {},
-      "x": 1063,
-      "y": 5644,
-      "width": 417,
-      "height": 300,
-      "color": "8"
-    },
-    {
-      "id": "52007f0c0aa48b9c",
-      "type": "text",
-      "text": "### Merge\n\non-the-fly:\n- read in parallel\n- tree of losers/prio q -> always read smallest\n\nrepeated partial merges if too many runs",
-      "styleAttributes": {},
-      "x": 1480,
-      "y": 5644,
-      "width": 327,
-      "height": 300,
-      "color": "8"
-    },
-    {
-      "id": "5704343e6979779e",
-      "type": "text",
-      "text": "1. load chunks int mem\n2. sort in-memory\n3. merge sorted runs\n4. recurse if needed",
-      "styleAttributes": {},
-      "x": 775,
-      "y": 5724,
-      "width": 260,
-      "height": 140,
-      "color": "7"
-    },
-    {
-      "id": "5eb4a66685aa1a30",
-      "type": "text",
-      "text": "*External Sort*",
-      "styleAttributes": {
-        "border": "dotted"
-      },
-      "x": 775,
-      "y": 5884,
-      "width": 260,
-      "height": 60
-    },
-    {
-      "id": "41264f880ecb0244",
-      "type": "text",
-      "text": "### Blockwise nested-loop join $\\Join_p^{BNL}$\nmuch faster, suitable for everything except dependent joins\n\n>go over lhs in chunks\n",
-      "styleAttributes": {},
-      "x": 775,
-      "y": 5367,
-      "width": 536,
-      "height": 160
     },
     {
       "id": "6ba61d125539727d",
@@ -773,79 +805,69 @@
       "color": "7"
     },
     {
-      "id": "52206d5410c9e280",
+      "id": "9b779825ce16ee51",
       "type": "text",
-      "text": "does $e_2$ depend on $e_1$?",
+      "text": "used in other operations",
       "styleAttributes": {},
-      "x": 1221,
-      "y": 5162,
-      "width": 180,
-      "height": 83,
-      "color": "7"
-    },
-    {
-      "id": "ce657fc8aab6809b",
-      "type": "text",
-      "text": "| Advantages           | Disadvantages              |\n| -------------------- | -------------------------- |\n| fewer function calls | more materialization       |\n| code + data locality | memory bandwidth           |\n|                      | less flexible control flow |\n",
-      "styleAttributes": {
-        "border": "invisible"
-      },
-      "x": 1290,
-      "y": 4450,
-      "width": 400,
-      "height": 223
-    },
-    {
-      "id": "974c2a35c806836c",
-      "type": "text",
-      "text": "### Interpreter Objects\n\n> subscripts assembled from interpreter objects\n\nflexible + easy to implement, but many virtual function calls",
-      "styleAttributes": {},
-      "x": 280,
-      "y": 4336,
-      "width": 468,
-      "height": 200
-    },
-    {
-      "id": "130e157f6ac3ffda",
-      "type": "text",
-      "text": "### Virtual Machines\n\n> subscripts compiled into VM instructions\n\nmore efficient but more complex",
-      "styleAttributes": {},
-      "x": 280,
-      "y": 4560,
-      "width": 400,
-      "height": 200
-    },
-    {
-      "id": "82505e0f0c2b1570",
-      "type": "text",
-      "text": "### Pre-compiled fragments\n\n- fragments perform number of operations\n- vectorization :3\n- only for column stores :c",
-      "styleAttributes": {},
-      "x": 762,
-      "y": 4336,
-      "width": 400,
-      "height": 200
-    },
-    {
-      "id": "a815e35213513144",
-      "type": "text",
-      "text": "aggregate values in groups",
-      "styleAttributes": {},
-      "x": 1900,
-      "y": 5680,
-      "width": 286,
+      "x": 775,
+      "y": 5644,
+      "width": 260,
       "height": 60,
       "color": "3"
     },
     {
-      "id": "9671501d65502ed9",
+      "id": "742cc94be2d7e953",
       "type": "text",
-      "text": "1. sort-based\n2. hash-based\n\nbeware of variable-length aggregates",
+      "text": "### Flush\n\nnaive\n- sort in-mem using quicksort\n- write all at once\n\ncomplex\n- heap sort w/ replacement selection\n- write out when needed -> longer runs",
       "styleAttributes": {},
-      "x": 1900,
-      "y": 5784,
-      "width": 286,
-      "height": 160,
+      "x": 1063,
+      "y": 5644,
+      "width": 417,
+      "height": 300,
+      "color": "8"
+    },
+    {
+      "id": "5704343e6979779e",
+      "type": "text",
+      "text": "1. load chunks int mem\n2. sort in-memory\n3. merge sorted runs\n4. recurse if needed",
+      "styleAttributes": {},
+      "x": 775,
+      "y": 5724,
+      "width": 260,
+      "height": 140,
       "color": "7"
+    },
+    {
+      "id": "5eb4a66685aa1a30",
+      "type": "text",
+      "text": "*External Sort*",
+      "styleAttributes": {
+        "border": "dotted"
+      },
+      "x": 775,
+      "y": 5884,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "a3d3fc2658c55798",
+      "type": "text",
+      "text": "### Dynamic extent mapping\n\n> pointers to ranges of pages -> best of both worlds: can grow with some overhead\n\n- grows exponentially\n- number of extents is bounded -> fits in page",
+      "styleAttributes": {},
+      "x": 730,
+      "y": 1079,
+      "width": 372,
+      "height": 281
+    },
+    {
+      "id": "ba5bb5eaa05a565b",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/images/Pasted image 20240423145741.png",
+      "styleAttributes": {},
+      "x": 1068,
+      "y": 1180,
+      "width": 144,
+      "height": 223
     },
     {
       "id": "08906c42a7c83995",
@@ -880,6 +902,672 @@
       "height": 200
     },
     {
+      "id": "03fc57613022b7c9",
+      "type": "text",
+      "text": "### Singleton Join $\\Join^{1J}$\n$|e_1| \\leq 1$ guaranteed",
+      "styleAttributes": {},
+      "x": 1702,
+      "y": 5014,
+      "width": 321,
+      "height": 120
+    },
+    {
+      "id": "4f4f2f55d8427f76",
+      "type": "text",
+      "text": "point queries only",
+      "styleAttributes": {},
+      "x": 235,
+      "y": 1966,
+      "width": 420,
+      "height": 60,
+      "color": "6"
+    },
+    {
+      "id": "7a07851e147a9ab3",
+      "type": "text",
+      "text": "sharing table entries allows for growth + avoids rehashing",
+      "styleAttributes": {},
+      "x": 235,
+      "y": 2060,
+      "width": 420,
+      "height": 70,
+      "color": "7"
+    },
+    {
+      "id": "063bf32a196d0b65",
+      "type": "text",
+      "text": "### Static file mapping\n> start + length\n\nsimple but inflexible",
+      "styleAttributes": {},
+      "x": 245,
+      "y": 1020,
+      "width": 325,
+      "height": 172
+    },
+    {
+      "id": "ddad787d51e55cb8",
+      "type": "text",
+      "text": "### Dynamic block-mapping\n\npointers to single pages -> most flexible but a lot of overhead",
+      "styleAttributes": {},
+      "x": 245,
+      "y": 1220,
+      "width": 338,
+      "height": 143
+    },
+    {
+      "id": "1a9b069fcb563fdf",
+      "type": "text",
+      "text": "- B-Tree: nodes with k~2k entries (key + TID)\n- B⁺-Tree: values only in leaf nodes\n\t- more flexible separators\n\t- higher fanout of inner nodes",
+      "styleAttributes": {},
+      "x": 2244,
+      "y": 1690,
+      "width": 400,
+      "height": 165,
+      "color": "7"
+    },
+    {
+      "id": "b7871051f580f63a",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Concurrent Access.md",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "x": 2705,
+      "y": 1885,
+      "width": 460,
+      "height": 775
+    },
+    {
+      "id": "fed63abcd7574410",
+      "type": "text",
+      "text": "finding data",
+      "styleAttributes": {},
+      "x": 1785,
+      "y": 2060,
+      "width": 260,
+      "height": 60,
+      "color": "3"
+    },
+    {
+      "id": "9a5a687acb947b70",
+      "type": "text",
+      "text": "- point/range queries\n- `insert`, `lookup`, `erase`",
+      "styleAttributes": {},
+      "x": 1785,
+      "y": 2160,
+      "width": 260,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "7532720dc6c59ea9",
+      "type": "text",
+      "text": "**special cases for indexing**",
+      "styleAttributes": {},
+      "x": 1780,
+      "y": 2366,
+      "width": 271,
+      "height": 60,
+      "color": "8"
+    },
+    {
+      "id": "96268e8d632a9637",
+      "type": "text",
+      "text": "- faster than search trees **in main memory**\n- versions for disk exist\n- useful for primary key indexes (uniqueness)",
+      "styleAttributes": {},
+      "x": 1135,
+      "y": 2175,
+      "width": 420,
+      "height": 160,
+      "color": "3"
+    },
+    {
+      "id": "4e36568296809796",
+      "type": "text",
+      "text": "faster processing of unselective predicates using table scans",
+      "styleAttributes": {},
+      "x": 1204,
+      "y": 1700,
+      "width": 401,
+      "height": 90,
+      "color": "3"
+    },
+    {
+      "id": "c21c0379706b9e66",
+      "type": "text",
+      "text": "- 1 bitnap per attribute value\n- index intersections = bit operations",
+      "styleAttributes": {},
+      "x": 1204,
+      "y": 1820,
+      "width": 400,
+      "height": 85,
+      "color": "7"
+    },
+    {
+      "id": "7955b240d11570c4",
+      "type": "text",
+      "text": "### Multi-Dimensional Indexing\n\n**curse of dimensionality**: scan faster than indexing for high dim",
+      "styleAttributes": {},
+      "x": 763,
+      "y": 1661,
+      "width": 328,
+      "height": 179
+    },
+    {
+      "id": "3a4c0b8f339ab43b",
+      "type": "text",
+      "text": "### Details\n\n- nice compressions\n- especially run-length encoding",
+      "styleAttributes": {},
+      "x": 1205,
+      "y": 1940,
+      "width": 400,
+      "height": 140,
+      "color": "8"
+    },
+    {
+      "id": "c0bec59986145049",
+      "type": "text",
+      "text": "- each node is a page\n- `uint16_t level`\n- `upper` can also be additional entry in `children` ",
+      "styleAttributes": {
+        "border": "dotted"
+      },
+      "x": 2732,
+      "y": 1708,
+      "width": 473,
+      "height": 130,
+      "color": "7"
+    },
+    {
+      "id": "c82fdbaf0fb4c302",
+      "type": "text",
+      "text": "E\nF\nF\nI\nC\nI\nE\nN\nT\n\nQ\nU\nE\nR\nY\n\nP\nR\nO\nC\nE\nS\nS\nI\nN\nG",
+      "styleAttributes": {},
+      "x": 0,
+      "y": 3600,
+      "width": 80,
+      "height": 2384,
+      "color": "4"
+    },
+    {
+      "id": "2cc156ef41c4d27e",
+      "type": "text",
+      "text": "H\nA\nR\nD\nW\nA\nR\nE \n\nT\nR\nE\nN\nD\nS",
+      "styleAttributes": {},
+      "x": -240,
+      "y": 3600,
+      "width": 80,
+      "height": 2384,
+      "color": "4"
+    },
+    {
+      "id": "1ecd97034d0537b9",
+      "type": "text",
+      "text": "select:\n```\nfor t in R:\n\tif p:\n\t\tpush/materialize\n```\n\ngroupby:\n```\nht = Hashtable()\nfor t in R:\n\tif ht.contains(t.x)\n\t\tcombine with agg\n\telse\n\t\tmake new agg\n```\n\njoin:\n- left pipeline:\n```\nht = Hashtable()\n\n// in left pipeline:\nht.insert(value, key)\n```\n- right pipeline:\n```\nfor t in S:\n\t// do other things\n\tif ht.contains(t.x)\n\t\t// push/materialize\n```",
+      "styleAttributes": {},
+      "x": -1210,
+      "y": 4337,
+      "width": 640,
+      "height": 820,
+      "color": "9"
+    },
+    {
+      "id": "a24b4256e96d0e09",
+      "type": "text",
+      "text": "### Data-centric query execution\n\ngoals:\n- tight loops\n- minimize memory access\n",
+      "styleAttributes": {},
+      "x": -1134,
+      "y": 4127,
+      "width": 417,
+      "height": 180
+    },
+    {
+      "id": "d3e879ab8baa5da5",
+      "type": "text",
+      "text": "### LLVM\n\n- unbounded number of registers\n- single static assignment\n- strongly typed",
+      "styleAttributes": {},
+      "x": -1248,
+      "y": 3657,
+      "width": 373,
+      "height": 180
+    },
+    {
+      "id": "73926d79774f5a28",
+      "type": "text",
+      "text": "## implementing subscripts",
+      "styleAttributes": {},
+      "x": -692,
+      "y": 3698,
+      "width": 260,
+      "height": 110
+    },
+    {
+      "id": "7feb6a1cb612fd37",
+      "type": "text",
+      "text": "### TSO + HTM for latching\n\nTODO",
+      "styleAttributes": {},
+      "x": -2037,
+      "y": 4547,
+      "width": 400,
+      "height": 130,
+      "color": "1"
+    },
+    {
+      "id": "4a43b8d87bf65846",
+      "type": "text",
+      "text": "TODO Hekaton",
+      "styleAttributes": {},
+      "x": -1740,
+      "y": 4017,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "0b59fd19e0a26020",
+      "type": "text",
+      "text": "## faster if we fit >:)",
+      "styleAttributes": {},
+      "x": -1577,
+      "y": 5162,
+      "width": 260,
+      "height": 100
+    },
+    {
+      "id": "f7c6437e2615718c",
+      "type": "text",
+      "text": "### Hardware transactional memory (HTM)\n\n> group instructions to transactions -> makes group atomic\n\n- no ACID guarantee",
+      "styleAttributes": {},
+      "x": -2097,
+      "y": 4297,
+      "width": 520,
+      "height": 180
+    },
+    {
+      "id": "4f5d72fef415217f",
+      "type": "text",
+      "text": "\n| System              | BM  | Logging                                  | Locking                               | Latching                   |\n| ------------------- | --- | ---------------------------------------- | ------------------------------------- | -------------------------- |\n| **H-Store/Volt-DB** | X   | log shipping to other nodes              | serial execution (private partitions) | not necessary              |\n| **Hekaton**         | X   | lightweight logging w/o index structures | optimistic MVCC                       | latch-free data structures |",
+      "styleAttributes": {},
+      "x": -2097,
+      "y": 3717,
+      "width": 677,
+      "height": 250
+    },
+    {
+      "id": "9d66e31263a06bf4",
+      "type": "text",
+      "text": "### OLTP\n= online transaction processing\n\noverhead: logging, locking, latching, buffer management",
+      "styleAttributes": {},
+      "x": -2539,
+      "y": 3967,
+      "width": 374,
+      "height": 180
+    },
+    {
+      "id": "0336178e5c79c17d",
+      "type": "text",
+      "text": "**row store**: for accessing many attributes",
+      "styleAttributes": {},
+      "x": -2482,
+      "y": 4237,
+      "width": 260,
+      "height": 60,
+      "color": "7"
+    },
+    {
+      "id": "b471231964ffa411",
+      "type": "text",
+      "text": "data layout in memory: lightweight, no BM/segments/slotted pages, just arrays",
+      "styleAttributes": {},
+      "x": -3040,
+      "y": 4337,
+      "width": 350,
+      "height": 120,
+      "color": "7"
+    },
+    {
+      "id": "c789ba7bbbef420c",
+      "type": "text",
+      "text": "### NUMA-aware data processing\n\n> access depends on memory location relative to processor\n\n-> core-local morsels are processed first ",
+      "styleAttributes": {},
+      "x": -1900,
+      "y": 4780,
+      "width": 431,
+      "height": 183
+    },
+    {
+      "id": "febb99e4822b9c7a",
+      "type": "text",
+      "text": "JIT: just-in-time compilation\n",
+      "styleAttributes": {},
+      "x": -1767,
+      "y": 5060,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "deb804fa3243c28d",
+      "type": "text",
+      "text": "- loop over materialized tuples\n- apply pipeline and materialize into next breaker",
+      "styleAttributes": {},
+      "x": -800,
+      "y": 4227,
+      "width": 260,
+      "height": 160,
+      "color": "7"
+    },
+    {
+      "id": "8ae3345e434bc809",
+      "type": "text",
+      "text": "- registers: `%1`\n- types: `i64`, `ptr`\n- `getelementptr`: array access, needs `ptr` to array and `i64` for indexing\n- `fptosi`: floating point to signed integer\n- `fsub`: float subtraction",
+      "styleAttributes": {},
+      "x": -1172,
+      "y": 3825,
+      "width": 480,
+      "height": 200,
+      "color": "9"
+    },
+    {
+      "id": "aa3750f8a7d21d9f",
+      "type": "text",
+      "text": "### Parallel Query Engine\n\n> parallelize operators themselves\n\n- needs synchronized data structures\n- example: morsel-driven query execution\n\t- dynamic work stealing to avoid stragglers",
+      "styleAttributes": {},
+      "x": -1052,
+      "y": 5704,
+      "width": 620,
+      "height": 240
+    },
+    {
+      "id": "82f806d936a7c376",
+      "type": "text",
+      "text": "### Parallel Query Execution\n\n- inter-query vs intra-query (horizontal vs vertical)\n\n**exchange operator** `Xchg(N:M)` -> buffer data + start threads\n- `XchgHashSplit(N:M)`: splits by hash value\n\t- before groupby, if many groups\n\t- for few groups, separate grouping first can be better\n\nbeware of:\n- load imbalances, workload changes, overhead",
+      "styleAttributes": {},
+      "x": -1234,
+      "y": 5344,
+      "width": 664,
+      "height": 340
+    },
+    {
+      "id": "e910b97e053d260f",
+      "type": "text",
+      "text": "## just parallelism",
+      "styleAttributes": {},
+      "x": -600,
+      "y": 5387,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "633986e2b6197852",
+      "type": "text",
+      "text": "### Radix-Trees\n\n>range queries, height depends on key length",
+      "styleAttributes": {},
+      "x": -2933,
+      "y": 4597,
+      "width": 493,
+      "height": 120
+    },
+    {
+      "id": "ab5ef597df7c268e",
+      "type": "text",
+      "text": "### Adaptive Radix Tree\n\n- Node4: 4 keys, 4 pointers\n- Node16: 16 keys, 16 pointers, SIMD\n- Node48: 256 offsets (values 0-47), max 48 values\n- Node256: direct addressing (array of size 256)\n",
+      "styleAttributes": {},
+      "x": -2950,
+      "y": 4887,
+      "width": 527,
+      "height": 200
+    },
+    {
+      "id": "faf3dfe66549015b",
+      "type": "text",
+      "text": "### SAP HANA\n\n> read-optimized `main` + update-friendly `delta`\n\n- periodic merge\n- olap reads main, oltp reads both",
+      "styleAttributes": {},
+      "x": -3155,
+      "y": 3877,
+      "width": 410,
+      "height": 210,
+      "color": "7"
+    },
+    {
+      "id": "10c6181dfa85db51",
+      "type": "text",
+      "text": "### Search Trees\n\n>B-Trees (not BST) bc cache",
+      "styleAttributes": {},
+      "x": -3231,
+      "y": 4597,
+      "width": 242,
+      "height": 140
+    },
+    {
+      "id": "395840baa4f4c2cb",
+      "type": "text",
+      "text": "### Hash indexes\n\n> simple, fast, no range queries, growing pains",
+      "styleAttributes": {},
+      "x": -3231,
+      "y": 4917,
+      "width": 242,
+      "height": 170
+    },
+    {
+      "id": "12b560e008f105c4",
+      "type": "text",
+      "text": "**transaction processing**\n- short\n- point queries: insert/update/delete/read",
+      "styleAttributes": {},
+      "x": -2567,
+      "y": 3777,
+      "width": 431,
+      "height": 120
+    },
+    {
+      "id": "2f8abeb74b768088",
+      "type": "text",
+      "text": "### HyPer\n\n> **virtual memory snapshots**: `fork` table when transaction",
+      "styleAttributes": {},
+      "x": -3095,
+      "y": 4107,
+      "width": 460,
+      "height": 140,
+      "color": "7"
+    },
+    {
+      "id": "424bc271c1ce3578",
+      "type": "text",
+      "text": "database workloads",
+      "styleAttributes": {
+        "textAlign": "center",
+        "border": "invisible"
+      },
+      "x": -3040,
+      "y": 3657,
+      "width": 230,
+      "height": 60
+    },
+    {
+      "id": "4c99cb5b891ca784",
+      "type": "text",
+      "text": "**column store**: vectorization/compression, caching",
+      "styleAttributes": {},
+      "x": -3562,
+      "y": 4197,
+      "width": 290,
+      "height": 100,
+      "color": "7"
+    },
+    {
+      "id": "286568d1973e32e8",
+      "type": "text",
+      "text": "**analytics**\n- read-only\n- long-running + use large parts of data",
+      "styleAttributes": {},
+      "x": -3601,
+      "y": 3797,
+      "width": 370,
+      "height": 170
+    },
+    {
+      "id": "20ba36d6dbba7d96",
+      "type": "text",
+      "text": "### Compaction: Hot/Cold clustering\n\n> compress cold data (rarely accessed by OLTP)\n\n| Temperature | Content          | Compressed? | Page size |\n| ----------- | ---------------- | ----------- | --------- |\n| hot         | working set      | no          | small     |\n| cooling     | hot + cold items | no          | small     |\n| cold        | only cold        | no          | small     |\n| frozen      | cold, immutable  | yes         | huge      |\ndeleting/updating frozen memories:\n- mark invalid (separate data structure)\n- copy to hot",
+      "styleAttributes": {},
+      "x": -3897,
+      "y": 4722,
+      "width": 540,
+      "height": 395
+    },
+    {
+      "id": "589811a3e9d4a88d",
+      "type": "text",
+      "text": "compression:\n- dictionary encoding\n- run-length\n- etc",
+      "styleAttributes": {},
+      "x": -3577,
+      "y": 5087,
+      "width": 260,
+      "height": 150,
+      "color": "7"
+    },
+    {
+      "id": "1d52f87e189e2171",
+      "type": "text",
+      "text": "temperature detection:\n- software: LRU, counter\n- hardware: `mprotect` (page fault on write), `dirty`/`young` flags in page table",
+      "styleAttributes": {},
+      "x": -3897,
+      "y": 5177,
+      "width": 400,
+      "height": 160,
+      "color": "7"
+    },
+    {
+      "id": "194a081609c7ba42",
+      "type": "text",
+      "text": "**snapshot maintenance**: for modifications",
+      "styleAttributes": {},
+      "x": -3892,
+      "y": 4572,
+      "width": 380,
+      "height": 50,
+      "color": "3"
+    },
+    {
+      "id": "c221953247195880",
+      "type": "text",
+      "text": "often piggybacked",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 514,
+      "y": 5585,
+      "width": 205,
+      "height": 60
+    },
+    {
+      "id": "1464b9bcbb962388",
+      "type": "text",
+      "text": "### Table Scan\n\n> literally just the tuples in a relation\n\ncomplexities:\n- navigating physical representation of relation\n- deferred updates, snapshot isolation, etc",
+      "styleAttributes": {},
+      "x": 230,
+      "y": 5186,
+      "width": 450,
+      "height": 240
+    },
+    {
+      "id": "640b77aab9519c46",
+      "type": "text",
+      "text": "### Selection $\\sigma_p$\n\n> filter using predicate",
+      "styleAttributes": {},
+      "x": 234,
+      "y": 5465,
+      "width": 280,
+      "height": 120
+    },
+    {
+      "id": "aec0056de3b2f397",
+      "type": "text",
+      "text": "### OLAP\n= online analytical processing\n\n",
+      "styleAttributes": {},
+      "x": -3572,
+      "y": 3997,
+      "width": 310,
+      "height": 120
+    },
+    {
+      "id": "4eb902c0281f1bf8",
+      "type": "text",
+      "text": "### Data blocks\n\n> compress cold data aggressively; pre-compute \n\nscan types:\n- interpreted vectorized scan on data block -> unpacks matches\n- interpreted vectorized scan on uncompressed chunk -> copies matches\n- JIT-compiled tuple-at-a-time scan on uncompressed chunk -> svaluates\nare combined into one tuple-at-a-time query pipeline",
+      "styleAttributes": {},
+      "x": -2299,
+      "y": 5009,
+      "width": 652,
+      "height": 307
+    },
+    {
+      "id": "3e8736f6864b9f45",
+      "type": "text",
+      "text": "### SARGability\n>Search ARGument-able\n\naka query can be matched to an index",
+      "styleAttributes": {},
+      "x": -3040,
+      "y": 5180,
+      "width": 355,
+      "height": 136
+    },
+    {
+      "id": "5b30828bbbfab1bf",
+      "type": "text",
+      "text": "### Non-unique values\n\n> index values have to be unique\n\n- append TID (= tiebreaker)\n- needs more space, but $\\mathcal{O}(\\log n)$ access",
+      "styleAttributes": {},
+      "x": 1764,
+      "y": 2632,
+      "width": 397,
+      "height": 181
+    },
+    {
+      "id": "ac2e328d15f081ff",
+      "type": "text",
+      "text": "### Multiple Attributes\n> compound keys\n\n- compared lexicographically\n- either all attributes bound or suffix as range",
+      "styleAttributes": {},
+      "x": 1645,
+      "y": 2870,
+      "width": 460,
+      "height": 180
+    },
+    {
+      "id": "04a55febc65e9cd7",
+      "type": "text",
+      "text": "### Small Materialized Aggregates\n\n> cache info in aggregate -> depending on predicate x aggregate, chunks can be skipped\n\n- data in physical chunks: clustering via insertion. older chunks usually static\n- similar to cache. update eagerly/lazily\n- e.g. `min`, `max`, `sum`, `count`\n",
+      "styleAttributes": {},
+      "x": 1645,
+      "y": 3120,
+      "width": 519,
+      "height": 280
+    },
+    {
+      "id": "93a138a6e669e18e",
+      "type": "text",
+      "text": "expressing query processing",
+      "styleAttributes": {},
+      "x": 660,
+      "y": 3703,
+      "width": 460,
+      "height": 50,
+      "color": "3"
+    },
+    {
+      "id": "52206d5410c9e280",
+      "type": "text",
+      "text": "does $e_2$ depend on $e_1$?",
+      "styleAttributes": {},
+      "x": 1221,
+      "y": 5162,
+      "width": 180,
+      "height": 83,
+      "color": "7"
+    },
+    {
+      "id": "41264f880ecb0244",
+      "type": "text",
+      "text": "### Blockwise nested-loop join $\\Join_p^{BNL}$\nmuch faster, suitable for everything except dependent joins\n\n>go over lhs in chunks\n",
+      "styleAttributes": {},
+      "x": 775,
+      "y": 5367,
+      "width": 536,
+      "height": 160
+    },
+    {
       "id": "5b98697860cbf7ae",
       "type": "text",
       "text": "### Nested-Loop Join $\\Join^{NL}_p$\nflexible, simple, inefficient\n\n> for every tuple of lhs: evaluate rhs",
@@ -890,14 +1578,24 @@
       "height": 153
     },
     {
-      "id": "a5b546ee76f34a75",
+      "id": "bf8ac9e6607fa0c3",
       "type": "text",
-      "text": "### Generated Machine Code\n\n> subscripts compiled into machine code at runtime\n\nmost efficient + complex, also what about portability?",
+      "text": "### Join $e_1 \\Join_p e_2$",
       "styleAttributes": {},
-      "x": 702,
-      "y": 4560,
-      "width": 460,
-      "height": 200
+      "x": 1209,
+      "y": 5000,
+      "width": 204,
+      "height": 60
+    },
+    {
+      "id": "90abb093787ca671",
+      "type": "text",
+      "text": "### Map $\\chi_{a:f}$\n\n> new column by evaluating $f$\n\n",
+      "styleAttributes": {},
+      "x": 234,
+      "y": 5635,
+      "width": 280,
+      "height": 140
     },
     {
       "id": "1068d3c283555aca",
@@ -922,6 +1620,27 @@
       "color": "7"
     },
     {
+      "id": "582189766fe371a2",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation/Push Model.md",
+      "styleAttributes": {},
+      "x": 2455,
+      "y": 3821,
+      "width": 1113,
+      "height": 924
+    },
+    {
+      "id": "19430bf0a237c13c",
+      "type": "text",
+      "text": "### Pipelining\n\n> avoid copying data\n\n**pipeline breaker**: operator that does materialize its input\n- **full pipeline breaker**: operator that consumes its input completely before processing\n\nhas consequences for original data ascess, scheduling",
+      "styleAttributes": {},
+      "x": 3165,
+      "y": 3721,
+      "width": 423,
+      "height": 340,
+      "color": "7"
+    },
+    {
       "id": "449e995c75b06d05",
       "type": "text",
       "text": "code independent from query",
@@ -935,109 +1654,217 @@
       "height": 60
     },
     {
+      "id": "82505e0f0c2b1570",
+      "type": "text",
+      "text": "### Pre-compiled fragments\n\n- fragments perform number of operations\n- vectorization :3\n- only for column stores :c",
+      "styleAttributes": {},
+      "x": 762,
+      "y": 4336,
+      "width": 400,
+      "height": 200
+    },
+    {
+      "id": "a5b546ee76f34a75",
+      "type": "text",
+      "text": "### Generated Machine Code\n\n> subscripts compiled into machine code at runtime\n\nmost efficient + complex, also what about portability?",
+      "styleAttributes": {},
+      "x": 702,
+      "y": 4560,
+      "width": 460,
+      "height": 200
+    },
+    {
       "id": "56a7dd4203b1ef97",
       "type": "text",
       "text": "### Additional Functionality\n\n- **rewind**: re-reading computed data\n- **rebind**: re-computing data\n- memory management\n- spooling intermediate results",
       "styleAttributes": {},
-      "x": 270,
-      "y": 3891,
+      "x": 235,
+      "y": 3669,
       "width": 265,
       "height": 312,
       "color": "6"
     },
     {
-      "id": "1464b9bcbb962388",
-      "type": "text",
-      "text": "### Table Scan\n\n> literally just the tuples in a relation\n\ncomplexities:\n- navigating physical representation of relation\n- deferred updates, snapshot isolation, etc",
+      "id": "24e8b8a052ab8fa8",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Extendible Hashing.md",
       "styleAttributes": {},
-      "x": 230,
-      "y": 5186,
-      "width": 450,
-      "height": 240
+      "x": 690,
+      "y": 1966,
+      "width": 420,
+      "height": 1234
     },
     {
-      "id": "c82fdbaf0fb4c302",
-      "type": "text",
-      "text": "E\nF\nF\nI\nC\nI\nE\nN\nT\n\nQ\nU\nE\nR\nY\n\nP\nR\nO\nC\nE\nS\nS\nI\nN\nG",
+      "id": "3d37cea48b7c879a",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Multi-Level Extendible Hashing.md",
       "styleAttributes": {},
-      "x": 0,
-      "y": 3600,
-      "width": 80,
-      "height": 2384,
-      "color": "4"
+      "x": 1145,
+      "y": 2426,
+      "width": 400,
+      "height": 774
     },
     {
-      "id": "93a138a6e669e18e",
+      "id": "974c2a35c806836c",
       "type": "text",
-      "text": "expressing query processing",
+      "text": "### Interpreter Objects\n\n> subscripts assembled from interpreter objects\n\nflexible + easy to implement, but many virtual function calls",
       "styleAttributes": {},
-      "x": 660,
-      "y": 3703,
-      "width": 460,
-      "height": 50,
-      "color": "3"
+      "x": 280,
+      "y": 4336,
+      "width": 468,
+      "height": 200
     },
     {
-      "id": "bf8ac9e6607fa0c3",
+      "id": "130e157f6ac3ffda",
       "type": "text",
-      "text": "### Join $e_1 \\Join_p e_2$",
+      "text": "### Virtual Machines\n\n> subscripts compiled into VM instructions\n\nmore efficient but more complex",
       "styleAttributes": {},
-      "x": 1209,
-      "y": 5000,
-      "width": 204,
-      "height": 60
+      "x": 280,
+      "y": 4560,
+      "width": 400,
+      "height": 200
     },
     {
-      "id": "03fc57613022b7c9",
-      "type": "text",
-      "text": "### Singleton Join $\\Join^{1J}$\n$|e_1| \\leq 1$ guaranteed",
+      "id": "e107c7414cbf34cd",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Linear Hashing.md",
       "styleAttributes": {},
-      "x": 1702,
-      "y": 5014,
-      "width": 321,
-      "height": 120
+      "x": 235,
+      "y": 2235,
+      "width": 420,
+      "height": 1039
     },
     {
-      "id": "640b77aab9519c46",
+      "id": "01b716808bf4f71e",
       "type": "text",
-      "text": "### Selection $\\sigma_p$\n\n> filter using predicate",
+      "text": "# specific operators + implementations",
       "styleAttributes": {},
-      "x": 234,
-      "y": 5465,
-      "width": 280,
-      "height": 120
+      "x": 165,
+      "y": 4058,
+      "width": 315,
+      "height": 139
     },
     {
-      "id": "90abb093787ca671",
+      "id": "5a522565c71596d7",
       "type": "text",
-      "text": "### Map $\\chi_{a:f}$\n\n> new column by evaluating $f$\n\n",
+      "text": "- operators materialize output\n- input read from materialized state",
       "styleAttributes": {},
-      "x": 234,
-      "y": 5635,
-      "width": 280,
-      "height": 140
+      "x": 1350,
+      "y": 3788,
+      "width": 330,
+      "height": 118,
+      "color": "6"
     },
     {
-      "id": "c221953247195880",
+      "id": "9ab5bdf62a66c1f5",
       "type": "text",
-      "text": "often piggybacked",
+      "text": "| Advantages                             | Disadvantages    |\n| -------------------------------------- | ---------------- |\n| easy implementation                    | expensive        |\n| dynamic plans                          | data > memory..? |\n| simple parallelization, result sharing |                  |\n",
       "styleAttributes": {
         "border": "invisible"
       },
-      "x": 514,
-      "y": 5585,
-      "width": 205,
+      "x": 1320,
+      "y": 3906,
+      "width": 400,
+      "height": 200
+    },
+    {
+      "id": "a0cda93d08cb487d",
+      "type": "text",
+      "text": "stream of tuple chunks",
+      "styleAttributes": {},
+      "x": 1347,
+      "y": 4397,
+      "width": 160,
+      "height": 96,
+      "color": "3"
+    },
+    {
+      "id": "db6a4b23ee300b54",
+      "type": "text",
+      "text": "- `open`\n- `next`\n- `close`",
+      "styleAttributes": {},
+      "x": 1540,
+      "y": 4397,
+      "width": 151,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "ce657fc8aab6809b",
+      "type": "text",
+      "text": "| Advantages           | Disadvantages              |\n| -------------------- | -------------------------- |\n| fewer function calls | more materialization       |\n| code + data locality | memory bandwidth           |\n|                      | less flexible control flow |\n",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 1320,
+      "y": 4497,
+      "width": 400,
+      "height": 223
+    },
+    {
+      "id": "b2a7f055e8a0b077",
+      "type": "text",
+      "text": "# finding data",
+      "styleAttributes": {},
+      "x": 125,
+      "y": 1680,
+      "width": 260,
       "height": 60
     },
     {
-      "id": "d3b322e041554924",
+      "id": "ddb67a4f882dcb53",
       "type": "text",
-      "text": "# inner workings of queries",
+      "text": "### Clustering\n> neighbouring pages next to each other on disk",
       "styleAttributes": {},
-      "x": 140,
-      "y": 3721,
-      "width": 260,
-      "height": 126
+      "x": 1785,
+      "y": 1665,
+      "width": 361,
+      "height": 155
+    },
+    {
+      "id": "385f21a13fcf6d66",
+      "type": "text",
+      "text": "stream of tuples",
+      "styleAttributes": {},
+      "x": 2137,
+      "y": 3798,
+      "width": 187,
+      "height": 57,
+      "color": "3"
+    },
+    {
+      "id": "c85a41ce4d80ab46",
+      "type": "text",
+      "text": "| Advantages             | Disadvantages          |\n| ---------------------- | ---------------------- |\n| data is pipelined      | virtual function calls |\n| avoids materialization | poor locality          |\n| flexible control flow  |                        |\n| easy implementation    |                        |",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 1865,
+      "y": 3873,
+      "width": 420,
+      "height": 186
+    },
+    {
+      "id": "5dfba0d6706d6060",
+      "type": "text",
+      "text": "`open`, `next`,`close`",
+      "styleAttributes": {},
+      "x": 1825,
+      "y": 3798,
+      "width": 250,
+      "height": 57,
+      "color": "6"
+    },
+    {
+      "id": "cdb2a2f1d4820623",
+      "type": "text",
+      "text": "passing data\n- tuple pointers\n- global data space with **registers** (more generic)",
+      "styleAttributes": {},
+      "x": 1825,
+      "y": 4061,
+      "width": 499,
+      "height": 142,
+      "color": "7"
     },
     {
       "id": "86c2337a45cd500a",
@@ -1074,239 +1901,6 @@
       "color": "3"
     },
     {
-      "id": "5dfba0d6706d6060",
-      "type": "text",
-      "text": "`open`, `next`,`close`",
-      "styleAttributes": {},
-      "x": 1825,
-      "y": 3798,
-      "width": 250,
-      "height": 57,
-      "color": "6"
-    },
-    {
-      "id": "01b716808bf4f71e",
-      "type": "text",
-      "text": "# specific operators + implementations",
-      "styleAttributes": {},
-      "x": 165,
-      "y": 5001,
-      "width": 315,
-      "height": 139
-    },
-    {
-      "id": "582189766fe371a2",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation/Push Model.md",
-      "styleAttributes": {},
-      "x": 2455,
-      "y": 3821,
-      "width": 1113,
-      "height": 924
-    },
-    {
-      "id": "19430bf0a237c13c",
-      "type": "text",
-      "text": "### Pipelining\n\n> avoid copying data\n\n**pipeline breaker**: operator that does materialize its input\n- **full pipeline breaker**: operator that consumes its input completely before processing\n\nhas consequences for original data ascess, scheduling",
-      "styleAttributes": {},
-      "x": 3165,
-      "y": 3721,
-      "width": 423,
-      "height": 340,
-      "color": "7"
-    },
-    {
-      "id": "a0cda93d08cb487d",
-      "type": "text",
-      "text": "stream of tuple chunks",
-      "styleAttributes": {},
-      "x": 1347,
-      "y": 4397,
-      "width": 160,
-      "height": 96,
-      "color": "3"
-    },
-    {
-      "id": "db6a4b23ee300b54",
-      "type": "text",
-      "text": "- `open`\n- `next`\n- `close`",
-      "styleAttributes": {},
-      "x": 1540,
-      "y": 4397,
-      "width": 151,
-      "height": 100,
-      "color": "6"
-    },
-    {
-      "id": "cdb2a2f1d4820623",
-      "type": "text",
-      "text": "passing data\n- tuple pointers\n- global data space with **registers** (more generic)",
-      "styleAttributes": {},
-      "x": 1825,
-      "y": 4061,
-      "width": 499,
-      "height": 142,
-      "color": "7"
-    },
-    {
-      "id": "385f21a13fcf6d66",
-      "type": "text",
-      "text": "stream of tuples",
-      "styleAttributes": {},
-      "x": 2137,
-      "y": 3798,
-      "width": 187,
-      "height": 57,
-      "color": "3"
-    },
-    {
-      "id": "c85a41ce4d80ab46",
-      "type": "text",
-      "text": "| Advantages             | Disadvantages          |\n| ---------------------- | ---------------------- |\n| data is pipelined      | virtual function calls |\n| avoids materialization | poor locality          |\n| flexible control flow  |                        |\n| easy implementation    |                        |",
-      "styleAttributes": {
-        "border": "invisible"
-      },
-      "x": 1865,
-      "y": 3873,
-      "width": 420,
-      "height": 186
-    },
-    {
-      "id": "5a522565c71596d7",
-      "type": "text",
-      "text": "- operators materialize output\n- input read from materialized state",
-      "styleAttributes": {},
-      "x": 1350,
-      "y": 3788,
-      "width": 330,
-      "height": 118,
-      "color": "6"
-    },
-    {
-      "id": "b7871051f580f63a",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Concurrent Access.md",
-      "styleAttributes": {
-        "border": "dashed"
-      },
-      "x": 2705,
-      "y": 1885,
-      "width": 460,
-      "height": 775
-    },
-    {
-      "id": "c0bec59986145049",
-      "type": "text",
-      "text": "- each node is a page\n- `uint16_t level`\n- `upper` can also be additional entry in `children` ",
-      "styleAttributes": {
-        "border": "dotted"
-      },
-      "x": 2732,
-      "y": 1690,
-      "width": 403,
-      "height": 140,
-      "color": "7"
-    },
-    {
-      "id": "fed63abcd7574410",
-      "type": "text",
-      "text": "finding data",
-      "styleAttributes": {},
-      "x": 1785,
-      "y": 2060,
-      "width": 260,
-      "height": 60,
-      "color": "3"
-    },
-    {
-      "id": "9a5a687acb947b70",
-      "type": "text",
-      "text": "- point/range queries\n- `insert`, `lookup`, `erase`",
-      "styleAttributes": {},
-      "x": 1785,
-      "y": 2160,
-      "width": 260,
-      "height": 120,
-      "color": "6"
-    },
-    {
-      "id": "7532720dc6c59ea9",
-      "type": "text",
-      "text": "**special cases for indexing**",
-      "styleAttributes": {},
-      "x": 1780,
-      "y": 2366,
-      "width": 271,
-      "height": 60,
-      "color": "8"
-    },
-    {
-      "id": "467721a44a6a6684",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Prefix B⁺-tree.md",
-      "styleAttributes": {
-        "border": "dashed"
-      },
-      "x": 2235,
-      "y": 3073,
-      "width": 417,
-      "height": 300
-    },
-    {
-      "id": "ac2e328d15f081ff",
-      "type": "text",
-      "text": "### Multiple Attributes\n> compound keys\n\n- compared lexicographically\n- either all attributes bound or suffix as range",
-      "styleAttributes": {},
-      "x": 1645,
-      "y": 2870,
-      "width": 460,
-      "height": 180
-    },
-    {
-      "id": "04a55febc65e9cd7",
-      "type": "text",
-      "text": "### Small Materialized Aggregates\n\n> cache info in aggregate -> depending on predicate x aggregate, chunks can be skipped\n\n- data in physical chunks: clustering via insertion. older chunks usually static\n- similar to cache. update eagerly/lazily\n- e.g. `min`, `max`, `sum`, `count`\n",
-      "styleAttributes": {},
-      "x": 1645,
-      "y": 3120,
-      "width": 519,
-      "height": 280
-    },
-    {
-      "id": "96268e8d632a9637",
-      "type": "text",
-      "text": "- faster than search trees **in main memory**\n- versions for disk exist\n- useful for primary key indexes (uniqueness)",
-      "styleAttributes": {},
-      "x": 1135,
-      "y": 2175,
-      "width": 420,
-      "height": 160,
-      "color": "3"
-    },
-    {
-      "id": "9ab5bdf62a66c1f5",
-      "type": "text",
-      "text": "| Advantages                             | Disadvantages    |\n| -------------------------------------- | ---------------- |\n| easy implementation                    | expensive        |\n| dynamic plans                          | data > memory..? |\n| simple parallelization, result sharing |                  |\n",
-      "styleAttributes": {
-        "border": "invisible"
-      },
-      "x": 1320,
-      "y": 3906,
-      "width": 400,
-      "height": 200
-    },
-    {
-      "id": "e65dca0767f49f30",
-      "type": "text",
-      "text": "TODO: why?",
-      "styleAttributes": {},
-      "x": 3205,
-      "y": 1690,
-      "width": 400,
-      "height": 60,
-      "color": "3"
-    },
-    {
       "id": "26ce161aa264426a",
       "type": "file",
       "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Details.md",
@@ -1316,6 +1910,18 @@
       "width": 400,
       "height": 1470,
       "color": "8"
+    },
+    {
+      "id": "6a1e69b178507769",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Bulkloading.md",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "x": 2238,
+      "y": 1915,
+      "width": 442,
+      "height": 1105
     },
     {
       "id": "8a1cd74083f166f1",
@@ -1330,145 +1936,220 @@
       "height": 593
     },
     {
-      "id": "ddb67a4f882dcb53",
-      "type": "text",
-      "text": "TODO: what exactly does clustering mean here again?",
-      "styleAttributes": {},
-      "x": 1886,
-      "y": 1665,
-      "width": 260,
-      "height": 120,
-      "color": "1"
-    },
-    {
-      "id": "38066558b29ac7e7",
-      "type": "text",
-      "text": "TODO: understand bulk update :´D",
-      "styleAttributes": {},
-      "x": 1901,
-      "y": 1855,
-      "width": 260,
-      "height": 60,
-      "color": "1"
-    },
-    {
-      "id": "4e36568296809796",
-      "type": "text",
-      "text": "faster processing of unselective predicates using table scans",
-      "styleAttributes": {},
-      "x": 1204,
-      "y": 1680,
-      "width": 401,
-      "height": 90,
-      "color": "3"
-    },
-    {
-      "id": "c21c0379706b9e66",
-      "type": "text",
-      "text": "- 1 bitnap per attribute value\n- index intersections = bit operations",
-      "styleAttributes": {},
-      "x": 1204,
-      "y": 1800,
-      "width": 400,
-      "height": 85,
-      "color": "7"
-    },
-    {
-      "id": "3a4c0b8f339ab43b",
-      "type": "text",
-      "text": "### Details\n\n- nice compressions\n- especially run-length encoding",
-      "styleAttributes": {},
-      "x": 1205,
-      "y": 1920,
-      "width": 400,
-      "height": 140,
-      "color": "8"
-    },
-    {
-      "id": "1a9b069fcb563fdf",
-      "type": "text",
-      "text": "- B-Tree: nodes with k~2k entries (key + TID)\n- B⁺-Tree: values only in leaf nodes\n\t- more flexible separators\n\t- higher fanout of inner nodes",
-      "styleAttributes": {},
-      "x": 2244,
-      "y": 1690,
-      "width": 400,
-      "height": 185,
-      "color": "7"
-    },
-    {
-      "id": "4f4f2f55d8427f76",
-      "type": "text",
-      "text": "point queries only",
-      "styleAttributes": {},
-      "x": 235,
-      "y": 1966,
-      "width": 420,
-      "height": 60,
-      "color": "6"
-    },
-    {
-      "id": "24e8b8a052ab8fa8",
+      "id": "467721a44a6a6684",
       "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Extendible Hashing.md",
-      "styleAttributes": {},
-      "x": 690,
-      "y": 1966,
-      "width": 420,
-      "height": 1234
-    },
-    {
-      "id": "7a07851e147a9ab3",
-      "type": "text",
-      "text": "sharing table entries allows for growth + avoids rehashing",
-      "styleAttributes": {},
-      "x": 235,
-      "y": 2060,
-      "width": 420,
-      "height": 70,
-      "color": "7"
-    },
-    {
-      "id": "e107c7414cbf34cd",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Linear Hashing.md",
-      "styleAttributes": {},
-      "x": 235,
-      "y": 2235,
-      "width": 420,
-      "height": 1039
-    },
-    {
-      "id": "6a1e69b178507769",
-      "type": "file",
-      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Bulkloading.md",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Prefix B⁺-tree.md",
       "styleAttributes": {
         "border": "dashed"
       },
-      "x": 2238,
-      "y": 1940,
-      "width": 412,
-      "height": 1020
+      "x": 2235,
+      "y": 3073,
+      "width": 417,
+      "height": 300
     },
     {
-      "id": "b2a7f055e8a0b077",
+      "id": "c96094504859416f",
       "type": "text",
-      "text": "# finding data",
+      "text": "A\nR\nC\nH\nI\nT\nE\nC\nT\nU\nR\nE",
       "styleAttributes": {},
-      "x": 125,
-      "y": 1680,
-      "width": 260,
-      "height": 60
+      "x": 0,
+      "y": -760,
+      "width": 80,
+      "height": 4200,
+      "color": "4"
     },
     {
-      "id": "b8eea1dc29e29617",
+      "id": "9338bd03ff72bc26",
       "type": "text",
-      "text": "TODO: how do registers work exactly?",
+      "text": "# storing data",
       "styleAttributes": {},
-      "x": 2127,
-      "y": 4223,
+      "x": 120,
+      "y": -420,
       "width": 260,
+      "height": 80
+    },
+    {
+      "id": "1dc96520bd08a93c",
+      "type": "text",
+      "text": "# memory management ",
+      "styleAttributes": {},
+      "x": 120,
+      "y": -570,
+      "width": 265,
+      "height": 105
+    },
+    {
+      "id": "937214675b57c1a8",
+      "type": "text",
+      "text": "manages pages\n- reduce I/O: keep active pages in memory, write back",
+      "styleAttributes": {},
+      "x": 892,
+      "y": -72,
+      "width": 320,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "17081ade73d7b013",
+      "type": "text",
+      "text": "- hash table of **buffer frames**\n- replaces pages in memory",
+      "styleAttributes": {},
+      "x": 892,
+      "y": -240,
+      "width": 320,
+      "height": 123,
+      "color": "7"
+    },
+    {
+      "id": "3c55b9f3d03d5e5f",
+      "type": "text",
+      "text": "#### special cases for storing things",
+      "styleAttributes": {},
+      "x": 2138,
+      "y": -359,
+      "width": 405,
+      "height": 73,
+      "color": "8"
+    },
+    {
+      "id": "fc3485f7fad72c99",
+      "type": "text",
+      "text": "**shadow paging**: page table, copy w/ dirty pages. bye bye locality\n",
+      "styleAttributes": {},
+      "x": 1752,
+      "y": -650,
+      "width": 400,
+      "height": 90
+    },
+    {
+      "id": "b4f2a1762d0e7758",
+      "type": "text",
+      "text": "**delta files**: pages copied on change. more IO",
+      "styleAttributes": {},
+      "x": 1752,
+      "y": -510,
+      "width": 400,
+      "height": 80
+    },
+    {
+      "id": "bcae98ec2fe87e04",
+      "type": "text",
+      "text": "### NULL values\n\n> unknown/unspecified/OOD values\n\ninvalid value if possible or NULL bit",
+      "styleAttributes": {},
+      "x": 1708,
+      "y": -256,
+      "width": 355,
+      "height": 160
+    },
+    {
+      "id": "18665ad50b656174",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Segments/Details.md",
+      "styleAttributes": {},
+      "x": 613,
+      "y": 600,
+      "width": 577,
+      "height": 460,
+      "color": "8"
+    },
+    {
+      "id": "496822119721f675",
+      "type": "text",
+      "text": "- *BTree was a Segment*\n- *Segments had their own buffer manager*\n- *segment id in 16 most significant bits, page id within segment in lower 48 bits*",
+      "styleAttributes": {
+        "border": "dotted"
+      },
+      "x": 245,
+      "y": 782,
+      "width": 325,
+      "height": 198,
+      "color": "7"
+    },
+    {
+      "id": "a620e9e0c2479b72",
+      "type": "text",
+      "text": "**set of pages** treated as one entity\n- structures can span multiple pages\n- virtual address space",
+      "styleAttributes": {},
+      "x": 245,
+      "y": 620,
+      "width": 325,
+      "height": 142,
+      "color": "3"
+    },
+    {
+      "id": "4999258d620a67e8",
+      "type": "text",
+      "text": "- `fix(pageNo, shared)`\n- `unfix(pageNo, dirty)`",
+      "styleAttributes": {},
+      "x": 892,
+      "y": -362,
+      "width": 320,
+      "height": 80,
+      "color": "6"
+    },
+    {
+      "id": "4fe3ca9d57094282",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/images/Pasted image 20240423145809.png",
+      "styleAttributes": {},
+      "x": 568,
+      "y": 1260,
+      "width": 147,
+      "height": 143
+    },
+    {
+      "id": "e8b322d55e2fb53f",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/FSI/Details.md",
+      "styleAttributes": {},
+      "x": 2696,
+      "y": 780,
+      "width": 680,
+      "height": 660,
+      "color": "8"
+    },
+    {
+      "id": "f1d4b7a0954f003e",
+      "type": "text",
+      "text": "finding space for incoming data",
+      "styleAttributes": {},
+      "x": 3251,
+      "y": 868,
+      "width": 310,
       "height": 60,
-      "color": "1"
+      "color": "3"
+    },
+    {
+      "id": "71db577d903fe77e",
+      "type": "text",
+      "text": "- free space bitmap\n- allocation: find page with enough free space, allocate space, update FSI",
+      "styleAttributes": {},
+      "x": 3251,
+      "y": 1005,
+      "width": 310,
+      "height": 140,
+      "color": "7"
+    },
+    {
+      "id": "f5985ee0d558d2e1",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Slotted Pages/Details.md",
+      "styleAttributes": {},
+      "x": 1610,
+      "y": 40,
+      "width": 684,
+      "height": 1400,
+      "color": "8"
+    },
+    {
+      "id": "a7cb7fe386425a60",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/images/Pasted image 20240423145701.png",
+      "styleAttributes": {},
+      "x": 500,
+      "y": 993,
+      "width": 141,
+      "height": 172
     },
     {
       "id": "e2d70fa28a273dd5",
@@ -1477,11 +2158,128 @@
       "styleAttributes": {
         "border": "dashed"
       },
-      "x": 1252,
-      "y": 624,
+      "x": 1260,
+      "y": 545,
       "width": 284,
       "height": 195,
       "color": "8"
+    },
+    {
+      "id": "b99940e85b8fec83",
+      "type": "text",
+      "text": "store tuples -> actually use page",
+      "styleAttributes": {},
+      "x": 2211,
+      "y": 227,
+      "width": 260,
+      "height": 73,
+      "color": "3"
+    },
+    {
+      "id": "a3787a5c0e584308",
+      "type": "text",
+      "text": "- `allocate(min, max)`\n- `relocate(slot_id, data_size)`\n- `compactify()`\n- `erase(slot_id)`",
+      "styleAttributes": {},
+      "x": 2211,
+      "y": 409,
+      "width": 260,
+      "height": 173,
+      "color": "6"
+    },
+    {
+      "id": "2affff942175e560",
+      "type": "text",
+      "text": "- slots grow from one side (array), data from the other\n- compactification",
+      "styleAttributes": {},
+      "x": 2211,
+      "y": 873,
+      "width": 260,
+      "height": 147,
+      "color": "7"
+    },
+    {
+      "id": "3ca2265f49e5aec8",
+      "type": "text",
+      "text": "- improve/reduce bandwidth consumption\n- compress individual tuples",
+      "styleAttributes": {},
+      "x": 2660,
+      "y": -630,
+      "width": 418,
+      "height": 80,
+      "color": "3"
+    },
+    {
+      "id": "aef927c99becbb9c",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Compression/Details.md",
+      "styleAttributes": {},
+      "x": 2660,
+      "y": -483,
+      "width": 418,
+      "height": 833
+    },
+    {
+      "id": "f7e1a26682fb776f",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Buffer Manager/Details.md",
+      "styleAttributes": {},
+      "x": 490,
+      "y": -640,
+      "width": 602,
+      "height": 1135,
+      "color": "8"
+    },
+    {
+      "id": "31e52fe3df96c349",
+      "type": "text",
+      "text": "what if tuples are larger than a page?\n- spanning pages complicates buffering/updating immensely\n- also what if tuple doesn't fit in mem at all",
+      "styleAttributes": {},
+      "x": 3150,
+      "y": -420,
+      "width": 411,
+      "height": 150,
+      "color": "3"
+    },
+    {
+      "id": "721009563902c782",
+      "type": "text",
+      "text": "- store BLOBs/CLOBs separately from main tuple\n- tradeoff: access cost vs tuple processing",
+      "styleAttributes": {},
+      "x": 3150,
+      "y": -240,
+      "width": 411,
+      "height": 123,
+      "color": "7"
+    },
+    {
+      "id": "abc4f929328e0715",
+      "type": "file",
+      "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Long Records/Details.md",
+      "styleAttributes": {},
+      "x": 3150,
+      "y": -60,
+      "width": 411,
+      "height": 620
+    },
+    {
+      "id": "133b29e6c6012565",
+      "type": "text",
+      "text": "### Record Layout\n\n> instead of serializing, split tuples into fixed-sized header with pointer + tail\n",
+      "styleAttributes": {},
+      "x": 1536,
+      "y": -389,
+      "width": 455,
+      "height": 133
+    },
+    {
+      "id": "32aa6feb6beb46e9",
+      "type": "text",
+      "text": "**update behavior**:\n- `force`: write all\n- `steal`: take memory\n",
+      "styleAttributes": {},
+      "x": 1350,
+      "y": -608,
+      "width": 260,
+      "height": 140
     }
   ],
   "edges": [
@@ -1569,7 +2367,7 @@
       "id": "953c224069b13a30",
       "styleAttributes": {},
       "fromNode": "3c55b9f3d03d5e5f",
-      "fromSide": "right",
+      "fromSide": "top",
       "toNode": "4e28f9173920ddd0",
       "toSide": "left",
       "toEnd": "none"
@@ -1704,14 +2502,6 @@
       "fromSide": "right",
       "toNode": "dc0723debf9d3ece",
       "toSide": "left"
-    },
-    {
-      "id": "26ff5f66c4c51c3e",
-      "styleAttributes": {},
-      "fromNode": "1be70e7f2fd64795",
-      "fromSide": "left",
-      "toNode": "1b1580da2b9aaf3b",
-      "toSide": "top"
     },
     {
       "id": "0674f8e1d4eea3f6",
@@ -1857,6 +2647,376 @@
       "toNode": "b1aa0dd719e65330",
       "toSide": "top",
       "label": "TIDs are values"
+    },
+    {
+      "id": "d0cef3f40f5a5426",
+      "styleAttributes": {},
+      "fromNode": "1b1580da2b9aaf3b",
+      "fromSide": "left",
+      "toNode": "7162d1acf0fd5e63",
+      "toSide": "right"
+    },
+    {
+      "id": "e52087deaa8e55a7",
+      "styleAttributes": {},
+      "fromNode": "424bc271c1ce3578",
+      "fromSide": "left",
+      "toNode": "286568d1973e32e8",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "3cf52a84327b993b",
+      "styleAttributes": {},
+      "fromNode": "424bc271c1ce3578",
+      "fromSide": "right",
+      "toNode": "12b560e008f105c4",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "4f4e47f3062f89d8",
+      "styleAttributes": {},
+      "fromNode": "b471231964ffa411",
+      "fromSide": "right",
+      "toNode": "0336178e5c79c17d",
+      "toSide": "bottom",
+      "toEnd": "none"
+    },
+    {
+      "id": "4abab0d4b29a6b29",
+      "styleAttributes": {},
+      "fromNode": "0336178e5c79c17d",
+      "fromSide": "top",
+      "toNode": "9d66e31263a06bf4",
+      "toSide": "bottom"
+    },
+    {
+      "id": "cc46a3d4fc8d388f",
+      "styleAttributes": {},
+      "fromNode": "9d66e31263a06bf4",
+      "fromSide": "top",
+      "toNode": "12b560e008f105c4",
+      "toSide": "bottom",
+      "toEnd": "none"
+    },
+    {
+      "id": "71ef23fc38e2f829",
+      "styleAttributes": {},
+      "fromNode": "b471231964ffa411",
+      "fromSide": "left",
+      "toNode": "4c99cb5b891ca784",
+      "toSide": "bottom",
+      "toEnd": "none"
+    },
+    {
+      "id": "c220712060cdd91a",
+      "styleAttributes": {},
+      "fromNode": "4c99cb5b891ca784",
+      "fromSide": "top",
+      "toNode": "aec0056de3b2f397",
+      "toSide": "bottom"
+    },
+    {
+      "id": "44d0747169c4f458",
+      "styleAttributes": {},
+      "fromNode": "aec0056de3b2f397",
+      "fromSide": "top",
+      "toNode": "286568d1973e32e8",
+      "toSide": "bottom",
+      "toEnd": "none"
+    },
+    {
+      "id": "8d6e701fdd5a4cde",
+      "styleAttributes": {},
+      "fromNode": "b86789571345b11c",
+      "fromSide": "right",
+      "toNode": "9d66e31263a06bf4",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "64782884011b73d5",
+      "styleAttributes": {},
+      "fromNode": "b86789571345b11c",
+      "fromSide": "left",
+      "toNode": "aec0056de3b2f397",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "2d6e0a43c172848e",
+      "styleAttributes": {},
+      "fromNode": "633986e2b6197852",
+      "fromSide": "bottom",
+      "toNode": "ab5ef597df7c268e",
+      "toSide": "top",
+      "label": "balance lookup performance and memory consumption"
+    },
+    {
+      "id": "1e59e37dd1245e5b",
+      "styleAttributes": {},
+      "fromNode": "b471231964ffa411",
+      "fromSide": "bottom",
+      "toNode": "1a1432443024a316",
+      "toSide": "top"
+    },
+    {
+      "id": "220f5b21f84c2212",
+      "styleAttributes": {},
+      "fromNode": "9d66e31263a06bf4",
+      "fromSide": "right",
+      "toNode": "f7c6437e2615718c",
+      "toSide": "top"
+    },
+    {
+      "id": "2ce75c3264a03d3b",
+      "styleAttributes": {},
+      "fromNode": "f7c6437e2615718c",
+      "fromSide": "bottom",
+      "toNode": "7feb6a1cb612fd37",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "3338c3290df3e0a5",
+      "styleAttributes": {},
+      "fromNode": "b471231964ffa411",
+      "fromSide": "left",
+      "toNode": "194a081609c7ba42",
+      "toSide": "top",
+      "toEnd": "none",
+      "color": "3"
+    },
+    {
+      "id": "9b03ccb493f6f3e1",
+      "styleAttributes": {},
+      "fromNode": "194a081609c7ba42",
+      "fromSide": "bottom",
+      "toNode": "20ba36d6dbba7d96",
+      "toSide": "top"
+    },
+    {
+      "id": "84914b45eeff3f5c",
+      "styleAttributes": {},
+      "fromNode": "b471231964ffa411",
+      "fromSide": "right",
+      "toNode": "4eb902c0281f1bf8",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "fb7705f3a2104978",
+      "styleAttributes": {},
+      "fromNode": "aec0056de3b2f397",
+      "fromSide": "left",
+      "toNode": "d113d573f79058d3",
+      "toSide": "right"
+    },
+    {
+      "id": "529cee4152af20cf",
+      "styleAttributes": {},
+      "fromNode": "aec0056de3b2f397",
+      "fromSide": "left",
+      "toNode": "726164c251349c38",
+      "toSide": "right"
+    },
+    {
+      "id": "cbc38743789369e6",
+      "styleAttributes": {},
+      "fromNode": "aec0056de3b2f397",
+      "fromSide": "left",
+      "toNode": "311d991862195053",
+      "toSide": "right"
+    },
+    {
+      "id": "a77ee358d5caa462",
+      "styleAttributes": {},
+      "fromNode": "9d66e31263a06bf4",
+      "fromSide": "right",
+      "toNode": "4f5d72fef415217f",
+      "toSide": "bottom"
+    },
+    {
+      "id": "a36d1c618a073bab",
+      "styleAttributes": {},
+      "fromNode": "7676937582680e14",
+      "fromSide": "right",
+      "toNode": "28c7233cd6db685a",
+      "toSide": "left"
+    },
+    {
+      "id": "856a96021249fd11",
+      "styleAttributes": {},
+      "fromNode": "c8891cf1b416fb56",
+      "fromSide": "top",
+      "toNode": "28c7233cd6db685a",
+      "toSide": "right",
+      "label": "ensure"
+    },
+    {
+      "id": "497a84955e972424",
+      "styleAttributes": {},
+      "fromNode": "859e75ab33061e20",
+      "fromSide": "bottom",
+      "toNode": "2aad1d020479b4ef",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "979d44b01f9245bb",
+      "styleAttributes": {},
+      "fromNode": "7676937582680e14",
+      "fromSide": "bottom",
+      "toNode": "8fecf99007c37b09",
+      "toSide": "top",
+      "label": "formally"
+    },
+    {
+      "id": "761f528bedd86244",
+      "styleAttributes": {},
+      "fromNode": "8fecf99007c37b09",
+      "fromSide": "bottom",
+      "toNode": "e50aa5578ca092b8",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "91972ad47ffd1fb2",
+      "styleAttributes": {},
+      "fromNode": "e50aa5578ca092b8",
+      "fromSide": "right",
+      "toNode": "2c01a79c7baa3b55",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "4fdffda4138fa51b",
+      "styleAttributes": {},
+      "fromNode": "2c01a79c7baa3b55",
+      "fromSide": "right",
+      "toNode": "6688ccd268251e01",
+      "toSide": "left"
+    },
+    {
+      "id": "0ce20d1e811dc92b",
+      "styleAttributes": {},
+      "fromNode": "28c7233cd6db685a",
+      "fromSide": "bottom",
+      "toNode": "6688ccd268251e01",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "84fb79fcb4b4fbbc",
+      "styleAttributes": {},
+      "fromNode": "6688ccd268251e01",
+      "fromSide": "bottom",
+      "toNode": "dbb96ccd35df5c1d",
+      "toSide": "top"
+    },
+    {
+      "id": "bea4833bc92e25d0",
+      "styleAttributes": {},
+      "fromNode": "a702ca4a2211eb9c",
+      "fromSide": "left",
+      "toNode": "f2c5154d054691b5",
+      "toSide": "right"
+    },
+    {
+      "id": "ff5c03ffa4dccce3",
+      "styleAttributes": {},
+      "fromNode": "e50aa5578ca092b8",
+      "fromSide": "bottom",
+      "toNode": "f2c5154d054691b5",
+      "toSide": "top",
+      "label": "formally"
+    },
+    {
+      "id": "35fa33450a831d20",
+      "styleAttributes": {},
+      "fromNode": "f2c5154d054691b5",
+      "fromSide": "bottom",
+      "toNode": "dda3222b73c6be3f",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "5d4c9bbe965fa1fd",
+      "styleAttributes": {},
+      "fromNode": "f2c5154d054691b5",
+      "fromSide": "bottom",
+      "toNode": "23938775162b2118",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "dcdd6d8855a88088",
+      "styleAttributes": {},
+      "fromNode": "dda3222b73c6be3f",
+      "fromSide": "right",
+      "toNode": "dbb96ccd35df5c1d",
+      "toSide": "left"
+    },
+    {
+      "id": "e91cf6193993afdf",
+      "styleAttributes": {},
+      "fromNode": "23938775162b2118",
+      "fromSide": "right",
+      "toNode": "dbb96ccd35df5c1d",
+      "toSide": "left"
+    },
+    {
+      "id": "5e8c5312c9c843f7",
+      "styleAttributes": {},
+      "fromNode": "b983b2d4a042b7fb",
+      "fromSide": "bottom",
+      "toNode": "f3f47631524b7601",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "353a80194121a136",
+      "styleAttributes": {},
+      "fromNode": "317cd96140f37b9b",
+      "fromSide": "top",
+      "toNode": "f3f47631524b7601",
+      "toSide": "bottom",
+      "toEnd": "none"
+    },
+    {
+      "id": "d183f7d467ee8f25",
+      "styleAttributes": {},
+      "fromNode": "c8891cf1b416fb56",
+      "fromSide": "bottom",
+      "toNode": "c013e2009056b3ec",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "856f35f9383a5555",
+      "styleAttributes": {},
+      "fromNode": "3e8736f6864b9f45",
+      "fromSide": "right",
+      "toNode": "4eb902c0281f1bf8",
+      "toSide": "left",
+      "label": "used for vectorized eval"
+    },
+    {
+      "id": "c1a2ec0a0c5554ac",
+      "styleAttributes": {},
+      "fromNode": "1be70e7f2fd64795",
+      "fromSide": "left",
+      "toNode": "1b1580da2b9aaf3b",
+      "toSide": "top"
+    },
+    {
+      "id": "002f1759ee4b5830",
+      "styleAttributes": {},
+      "fromNode": "1ecd97034d0537b9",
+      "fromSide": "right",
+      "toNode": "582189766fe371a2",
+      "toSide": "bottom"
     }
   ],
   "metadata": {}

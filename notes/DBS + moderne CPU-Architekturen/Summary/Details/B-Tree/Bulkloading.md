@@ -17,7 +17,9 @@ basic idea: sort before inserting -> locality :3
 2. merge into existing tree
 3. form pages, remember separators
 4. new chunk when page would contain only entries from original trees
-5. merge in separators
+	- avoid rewriting all leaf pages due to propagating shifts
+	- accept underfull pages: old pages are not merged together (fully)
+1. merge in separators
 
 ------
 

@@ -6,27 +6,15 @@
       {
         "id": "05fee9515139bc8b",
         "type": "tabs",
-        "dimension": 23.2807570977918,
+        "dimension": 44.479495268138805,
         "children": [
-          {
-            "id": "6dbf690f2ab30217",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Slotted Pages/Details.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "b79aa351df95fa8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation/Push Model.md",
+                "file": "notes/NLP lab/report.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +25,7 @@
       {
         "id": "fcbbae4b73080dd3",
         "type": "tabs",
-        "dimension": 76.71924290220821,
+        "dimension": 55.520504731861195,
         "children": [
           {
             "id": "05e7edcadfb6402c",
@@ -52,17 +40,14 @@
             }
           },
           {
-            "id": "76b4b1b1bdfce7c5",
+            "id": "6dbf690f2ab30217",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
-                "viewState": {
-                  "x": 1110.2120224878192,
-                  "y": 658.4998272717299,
-                  "zoom": -1.6720091579221628
-                }
+                "file": "notes/NLP lab/research/Domains/Initial search for domains and datasets.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -118,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.50260543823242
+    "width": 259.5026054382324
   },
   "right": {
     "id": "f4e7b405e0ddf651",
@@ -134,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
+                "file": "notes/NLP lab/report.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
+                "file": "notes/NLP lab/report.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas"
+                "file": "notes/NLP lab/report.md"
               }
             }
           },
@@ -204,53 +189,55 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76b4b1b1bdfce7c5",
+  "active": "b79aa351df95fa8d",
   "lastOpenFiles": [
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Slotted Pages/Details.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Things to practice.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
-    "notes/DBS + moderne CPU-Architekturen/1. Classic DBMS architecture/1.1 Storage.md",
+    "notes/NLP lab/Pre-first session.md",
+    "notes/NLP lab/report.md",
+    "notes/Data Structure Engineering/Summary/Exercise Quizzes.md",
+    "notes/NLP lab/research/Domains/Initial search for domains and datasets.md",
+    "notes/NLP lab/research/Datasets/Untitled.md",
+    "notes/NLP lab/research/Datasets/Logic and LogicClimate.md",
+    "notes/NLP lab/research/Datasets/General.md",
+    "notes/NLP lab/research/Datasets/FOL datasets.md",
+    "notes/NLP lab/working notes/BIO tagging.md",
+    "notes/NLP lab/working notes/MASC preprocessing.md",
+    "notes/NLP lab/working notes/Huggingface tutorial for question answering.md",
+    "notes/NLP lab/working notes/General.md",
+    "notes/NLP lab/working notes/Cause span extraction.md",
+    "notes/NLP lab/working notes/BioCause preprocessing.md",
+    "notes/Data Structure Engineering/Summary/OVERVIEW.canvas",
+    "notes/Data Structure Engineering/Exam Q&A 25.07..md",
+    "Pasted image 20240808131114.png",
+    "notes/Data Structure Engineering/Summary/Questions.md",
+    "Tiering (T runs per level).png",
+    "Leveling (1 run per level).png",
+    "Pasted image 20240808123402.png",
+    "Pasted image 20240808120941.png",
+    "notes/Data Structure Engineering/3.3 Memory Reclamation.md",
+    "Pasted image 20240806205410.png",
+    "notes/Data Structure Engineering/3.2 Synchronization techniques - locking,optimistic, lock-free.md",
+    "Pasted image 20240806173807.png",
+    "notes/Data Structure Engineering/3.1 Hardware primitives.md",
+    "notes/Data Structure Engineering/2.3 Tries.md",
+    "Effect of height optimizations.png",
+    "notes/Data Structure Engineering/2.2 Search trees.md",
+    "notes/Data Structure Engineering/2.1 Hash tables.md",
+    "notes/Data Structure Engineering/2. In-memory data structures.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation/Push Model.md",
+    "notes/DBS + moderne CPU-Architekturen/Guest Lecture - Concurrency.md",
+    "notes/Data Structure Engineering/Summary",
     "notes/DBS + moderne CPU-Architekturen/Summary/Questions.md",
-    "notes/DBS + moderne CPU-Architekturen/2. Efficient Query Processing/2.2 Algebraic operators.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Algebraic Opertoars/Details.md",
+    "notes/DBS + moderne CPU-Architekturen/Summary/OVERVIEW.canvas",
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Long Records",
     "notes/DBS + moderne CPU-Architekturen/Summary/Details/Algebraic Opertoars",
     "Pasted image 20240725235329.png",
     "Pasted image 20240725235302.png",
-    "Pasted image 20240725235232.png",
-    "notes/DBS + moderne CPU-Architekturen/2. Efficient Query Processing/2.1 Set oriented query processing.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Multi-Level Extendible Hashing.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation/Push Model.md",
     "notes/DBS + moderne CPU-Architekturen/Summary/Details/Operator Implementation",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Compression/Details.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Linear Hashing.md",
-    "Pasted image 20240725201940.png",
-    "Pasted image 20240725201240.png",
-    "notes/DBS + moderne CPU-Architekturen/1. Classic DBMS architecture/1.2 Access Paths.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing/Extendible Hashing.md",
-    "Pasted image 20240725192332.png",
     "notes/DBS + moderne CPU-Architekturen/Summary/Details/Hashing",
-    "notes/Data Structure Engineering/Exam Q&A 25.07..md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Prefix B⁺-tree.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Variable length records.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Bulkloading.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Concurrent Access.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree/Details.md",
     "notes/DBS + moderne CPU-Architekturen/Summary/Details/B-Tree",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Buffer Manager/Details.md",
-    "Pasted image 20240724180204.png",
-    "Pasted image 20240724180013.png",
     "notes/DBS + moderne CPU-Architekturen/Summary/Details/Compression",
-    "Pasted image 20240724173412.png",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Segments/Details.md",
     "notes/DBS + moderne CPU-Architekturen/Summary/Details/Slotted Pages",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/FSI/Details.md",
     "notes/DBS + moderne CPU-Architekturen/Summary/Details/FSI",
-    "notes/NLP lab/Background Info.md",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Segments",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Details/Buffer Manager",
-    "notes/DBS + moderne CPU-Architekturen/Summary/Color coding.md",
-    "notes/DBS + moderne CPU-Architekturen/modernDBS.md",
-    "Pasted image 20240709152338.png"
+    "notes/DBS + moderne CPU-Architekturen/Summary/Details"
   ]
 }

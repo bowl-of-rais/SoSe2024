@@ -1,0 +1,2283 @@
+{
+  "nodes": [
+    {
+      "id": "29662d6037147f6a",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1280,
+      "y": 3660,
+      "width": 3000,
+      "height": 1300,
+      "label": "Tries"
+    },
+    {
+      "id": "08715cfa1aaa81ee",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1872,
+      "y": 2905,
+      "width": 1620,
+      "height": 1600,
+      "label": "Synchronization Paradigms"
+    },
+    {
+      "id": "082ff9175c2c0c51",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1280,
+      "y": 2060,
+      "width": 1450,
+      "height": 1440,
+      "label": "B-Trees"
+    },
+    {
+      "id": "4bcff4ab0e450b05",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1280,
+      "y": 720,
+      "width": 1900,
+      "height": 960,
+      "label": "Hashing"
+    },
+    {
+      "id": "f46b2bd5ff3409df",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -3280,
+      "y": 3885,
+      "width": 1285,
+      "height": 920,
+      "label": "Memory Reclamation"
+    },
+    {
+      "id": "7f59186da2a8c0f2",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1728,
+      "y": 2155,
+      "width": 1332,
+      "height": 670,
+      "label": "Hardware Transactional Memory"
+    },
+    {
+      "id": "f4225249ba197d2a",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1670,
+      "y": 2640,
+      "width": 1040,
+      "height": 840,
+      "label": "Variable-length keys"
+    },
+    {
+      "id": "26291c9b2fc22148",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -2917,
+      "y": 680,
+      "width": 1327,
+      "height": 583,
+      "label": "OOM storage options"
+    },
+    {
+      "id": "a3e57f3859ade622",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 2980,
+      "y": 1860,
+      "width": 870,
+      "height": 860,
+      "label": "Arrays"
+    },
+    {
+      "id": "07ed05e95aa89727",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -34,
+      "y": 880,
+      "width": 1162,
+      "height": 635,
+      "label": "Split-ordered list"
+    },
+    {
+      "id": "69a58a27be89a9c0",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -40,
+      "y": 1805,
+      "width": 1168,
+      "height": 590,
+      "label": "Bw-Tree"
+    },
+    {
+      "id": "12a3a20abc6c1a27",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -2972,
+      "y": 1495,
+      "width": 904,
+      "height": 660,
+      "label": "Hardware Primitives"
+    },
+    {
+      "id": "2e73b0d124170076",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1240,
+      "y": 1470,
+      "width": 990,
+      "height": 585,
+      "label": "LSM trees"
+    },
+    {
+      "id": "2b71c9f0e4b7dc9d",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -3280,
+      "y": 2245,
+      "width": 760,
+      "height": 660,
+      "label": "Synchronization in C++"
+    },
+    {
+      "id": "63188536fd9ec35a",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1670,
+      "y": 2120,
+      "width": 1020,
+      "height": 460,
+      "color": "7",
+      "label": "General Implementation"
+    },
+    {
+      "id": "4627db15142b6bf7",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 3000,
+      "y": 1920,
+      "width": 830,
+      "height": 540,
+      "label": "Searching in Arrays"
+    },
+    {
+      "id": "5f2a47a967529a0f",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -2480,
+      "y": 2245,
+      "width": 520,
+      "height": 660,
+      "label": "Synchronization on x86-64"
+    },
+    {
+      "id": "ab7e3b718d599008",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 2830,
+      "y": 3160,
+      "width": 585,
+      "height": 340,
+      "label": "BST"
+    },
+    {
+      "id": "3458bbf293f7dd18",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 3000,
+      "y": 2540,
+      "width": 830,
+      "height": 160,
+      "label": "Growing Arrays"
+    },
+    {
+      "id": "8af6e9ed512d86bd",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1865,
+      "y": 1860,
+      "width": 730,
+      "height": 160,
+      "label": "Ordered Data Sets"
+    },
+    {
+      "id": "c9097e44c4a214c2",
+      "type": "text",
+      "text": "### Synchronizing B⁺-trees\n##### Lock Coupling\n- additional lock for root node changes\n- prevent propagating structure modifications: eager splitting (good for fixed-sized) or restart\n##### Optimistic Lock Coupling\n- writers only lock one leaf\n- optimism: infinite loops (binary search), segfaults (needs additional check)\n##### ROWEX\n- like B-Link Tree\n- per-node operations like slotted pages\n- all keys must be scanned...?",
+      "styleAttributes": {},
+      "x": 60,
+      "y": 2520,
+      "width": 580,
+      "height": 560,
+      "color": "7"
+    },
+    {
+      "id": "cf87472a0a29ef60",
+      "type": "text",
+      "text": "### Split\n1. move right half to new node\n2. split delta: physical pointer to old node, logical pointer to new\n3. update MT from old to split\n4. update logical pointers (parent, next) from old to split\n5. add separator: points to parent\n6. separator gets logical pointer to new node\n7. update MT from parent to separator\n",
+      "styleAttributes": {},
+      "x": -20,
+      "y": 2035,
+      "width": 495,
+      "height": 340
+    },
+    {
+      "id": "27457308b66bc26d",
+      "type": "text",
+      "text": "### B-Link Tree\n>`next` pointers in both inner and leaf nodes\n\n- allows for using only 1 lock\n- splits move entries to right neighbors\n- (merges are evil here)",
+      "styleAttributes": {},
+      "x": 350,
+      "y": 3170,
+      "width": 360,
+      "height": 280
+    },
+    {
+      "id": "90fa432c7ee56e2b",
+      "type": "text",
+      "text": "### Contention Split\n>if lock cannot be acquired on first try, split node with some probability",
+      "styleAttributes": {},
+      "x": -10,
+      "y": 3210,
+      "width": 260,
+      "height": 200
+    },
+    {
+      "id": "aa13fd5c5c287707",
+      "type": "text",
+      "text": "- store entries in single lock-free list sorted by hash\n- array of pointers/shortcuts: $\\mathcal{O}(1)$",
+      "styleAttributes": {},
+      "x": -14,
+      "y": 905,
+      "width": 460,
+      "height": 130,
+      "color": "3"
+    },
+    {
+      "id": "da83c64c98bc7eb6",
+      "type": "text",
+      "text": "- constant-time random access with lzcnt\n- initialize to 0",
+      "styleAttributes": {},
+      "x": 568,
+      "y": 905,
+      "width": 420,
+      "height": 100,
+      "color": "1"
+    },
+    {
+      "id": "2cbdd63b13e21c6a",
+      "type": "text",
+      "text": "- dictionary: max 64 pointers\n- array chunks: sizes 1, 1, 2, 4, ...\n- swap bits: lookup table for bytes",
+      "styleAttributes": {},
+      "x": 614,
+      "y": 1005,
+      "width": 400,
+      "height": 120,
+      "color": "7"
+    },
+    {
+      "id": "d9d58f2560debef4",
+      "type": "text",
+      "text": "### Operations\n##### Insert\n- growth by factor 2\n- buckets lazily initialized on first access (new shortcuts)\n##### Delete\n- to allow CAS: sentinel nodes for buckets\n\t- so that actual nodes are not referenced in dictionary",
+      "styleAttributes": {},
+      "x": 520,
+      "y": 1156,
+      "width": 588,
+      "height": 340
+    },
+    {
+      "id": "e1b76da9f8af37c2",
+      "type": "text",
+      "text": "### Recursive Split Ordering\n>store keys ordered by bit-wise reverse hash\n\neach \"level\" uses one more bit:\n![[Pasted image 20240806205410.png|400]]",
+      "styleAttributes": {},
+      "x": -14,
+      "y": 1126,
+      "width": 460,
+      "height": 310
+    },
+    {
+      "id": "e938995cdcaa4fae",
+      "type": "text",
+      "text": "### Synchronizing ART\n##### Lock Coupling\n- modifications change only 1 node (+ parent) anyways\n- additional lock for root\n##### Optimistic Lock Coupling\n- lock + version for each node\n- detecting root changes:\n\t- additional optimistic lock\n\t- static root (same node always)\n\t- validate root pointer\n\n>read version of current, validate version of parent, search current\n\n- locking corresponds to version reading\n- unlocking corresponds to version checking\n##### ROWEX\n- make keys + children `std::atomic`\n- make `Node4` and `Node16` unsorted + append-only\n\nnode size change:\n1. lock node + parent\n2. make new node, copy child content\n3. set pointer in parent to new node\n4. mark old node as obsolete\n5. unlock node + parent\n\npath compression:\n- modify prefix atomically\n- prefix: 4B length + 12B prefix\n- `level` field in nodes",
+      "styleAttributes": {},
+      "x": 120,
+      "y": 3800,
+      "width": 640,
+      "height": 1015,
+      "color": "7"
+    },
+    {
+      "id": "432728ee143b87be",
+      "type": "text",
+      "text": "| +                             | -                              |\n| ----------------------------- | ------------------------------ |\n| easy to use                   | scalability hard to debug      |\n| scalable                      | HLE not scalable on older CPUs |\n| no special memory reclamation |                                |",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -1036,
+      "y": 2645,
+      "width": 600,
+      "height": 160
+    },
+    {
+      "id": "302fa22107b03f68",
+      "type": "text",
+      "text": "### Intel transactional synchronization extensions\n-> success/commit: atomically make changes visible\n-> abort: undo register/memory changes",
+      "styleAttributes": {},
+      "x": -996,
+      "y": 2195,
+      "width": 520,
+      "height": 160
+    },
+    {
+      "id": "f195a0648fabe43b",
+      "type": "text",
+      "text": "### Restricted Transactional Memory\n> explicit TA instructions: `xbegin`, `xend`, `xabort`",
+      "styleAttributes": {},
+      "x": -748,
+      "y": 2455,
+      "width": 312,
+      "height": 165
+    },
+    {
+      "id": "2b6c25a48ffd3c8c",
+      "type": "text",
+      "text": "performance:\n",
+      "styleAttributes": {},
+      "x": -860,
+      "y": 1897,
+      "width": 160,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "706bb71defc76b7e",
+      "type": "text",
+      "text": "### Mapping Table\n>CAS of pointers\n\n- maps page/node ids to addresses\n- nodes reference other nodes via ids",
+      "styleAttributes": {},
+      "x": -20,
+      "y": 1825,
+      "width": 495,
+      "height": 180
+    },
+    {
+      "id": "f536bdc52be9d750",
+      "type": "text",
+      "text": "### Deltas\n>avoid in-place updates\n\n- point to updated page (can be chained)\n- pointed to by MT\n##### Record Update Deltas\n- insert/delete/update of records\n- search stops at first occurrence\n##### Structure modification Deltas\n1. **split**: replaces split page in MT, points to both halves\n2. **separator**: shortcut in parent on what ranges to find the new page\n",
+      "styleAttributes": {},
+      "x": 508,
+      "y": 1915,
+      "width": 600,
+      "height": 460
+    },
+    {
+      "id": "da845c34f4ad04e3",
+      "type": "text",
+      "text": "lock-free B+-Tree index",
+      "styleAttributes": {},
+      "x": 508,
+      "y": 1825,
+      "width": 260,
+      "height": 60,
+      "color": "3"
+    },
+    {
+      "id": "acae323b3a9e5e17",
+      "type": "text",
+      "text": "#splitorderedlist ",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -14,
+      "y": 1436,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "19501bc6a7f4c265",
+      "type": "text",
+      "text": "##### Lock\n```cpp\nstatic constexpr u64 WRITE_FLAG = 1;\nstd::atomic<u64> version_latch{0} // has load, store\n\nbool is_locked(u64 version) {\n\treturn (version & WRITE_FLAG) == WRITE_FLAG;\n}\n```\n-> exclusive when uneven\n##### Readers\nfetch current version instead of locking:\n```cpp\nu64 version(bool& restart){\n\tu64 version = version_latch.load();\n\tif (is_locked(version)) {\n\t\trestart = true;\n\t}\n\treturn version\n}\n```\n\ncheck version instead of unlocking:\n```\nvoid check_version(u64 start_read, bool& restart) const {\n\trestart = (start_read != version_latch.load());\n}\n```\n\n##### Writers\nincrement version counter of node to be modified instead of locking:\n```cpp\nvoid upgrade_write(u64& version, bool& restart) {\n\tif (version_latch.compare_exchange_strong(\n\t\t\t\tversion, version + WRITE_FLAG)) {\n\t\tversion = version + WRITE_FLAG;\n\t} else {\n\t\trestart = true;\n\t}\n}\n```\n\nincrement version again instead of unlocking:\n```cpp\nvoid wunlock() {\n\tversion_latch += WRITE_FLAG;\n}\n```\n\n##### Usage\n- `auto node_v = next->version(restart);`\n- `if (restart) goto restart;`\n\t- alternative: long jumps for less branching (slower tho)\n\t- or exceptions (exercise code?)\n##### Wrappers\n- `readUnlockOrRestart(node, version)`\n- `checkOrRestart(node, version)`",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -972,
+      "y": 2941,
+      "width": 680,
+      "height": 1525,
+      "color": "7"
+    },
+    {
+      "id": "cc529757094ffae5",
+      "type": "text",
+      "text": "### Log-structured Merge Trees\n>out-of-place writes + periodic merges of sorted runs\n\n##### Merging\n- combine multiple runs into one\n- each one is at most $T$ times larger than previous run\n##### Optimizations\n- in-memory Bloom filter (no FNs) for runs\n- partitioning into independent ranges",
+      "styleAttributes": {},
+      "x": -1220,
+      "y": 1490,
+      "width": 520,
+      "height": 380
+    },
+    {
+      "id": "fa29a0e24a00a6e5",
+      "type": "file",
+      "file": "Pasted image 20240808123402.png",
+      "styleAttributes": {},
+      "x": -1220,
+      "y": 1877,
+      "width": 316,
+      "height": 158
+    },
+    {
+      "id": "456e750013fb820d",
+      "type": "file",
+      "file": "Leveling (1 run per level).png",
+      "styleAttributes": {},
+      "x": -670,
+      "y": 1496,
+      "width": 400,
+      "height": 184
+    },
+    {
+      "id": "b972507d8872e3aa",
+      "type": "file",
+      "file": "Tiering (T runs per level).png",
+      "styleAttributes": {},
+      "x": -670,
+      "y": 1839,
+      "width": 400,
+      "height": 196
+    },
+    {
+      "id": "7eff63abf3ef49c4",
+      "type": "text",
+      "text": "### OOM B-Trees\n- large fanout: minimize disk accesses\n- combined with buffer manager :3 fixed-size nodes work well\n##### Lookup\n- cache inner nodes\n- usually 1 disk read\n##### Sequential inserts/updates\n- changes buffered (right-most node)\n- asynchronous disk write\n##### Random inserts/updates/deletes\n- if working set > cache, every change is a random disk write :c",
+      "styleAttributes": {},
+      "x": -1233,
+      "y": 704,
+      "width": 671,
+      "height": 539
+    },
+    {
+      "id": "af6b505a4ad8dc0d",
+      "type": "text",
+      "text": "- `insert`, `remove`, `lookup`\n- `lower bound`, `upper bound`, `next`\n- `prefix lookup`, `min`, `max`, `top-k`",
+      "styleAttributes": {},
+      "x": 1885,
+      "y": 1880,
+      "width": 380,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "503aeb83dd6bfaf4",
+      "type": "text",
+      "text": "different node layouts",
+      "styleAttributes": {},
+      "x": 2210,
+      "y": 2350,
+      "width": 245,
+      "height": 60
+    },
+    {
+      "id": "8473ed19c60bb8fb",
+      "type": "text",
+      "text": "**data dependencies**: introduced in benchmarks to avoid CPU speculation\n- e.g. value of one lookup is key for next",
+      "styleAttributes": {},
+      "x": 1330,
+      "y": 1775,
+      "width": 460,
+      "height": 140
+    },
+    {
+      "id": "bf853196a010fad4",
+      "type": "text",
+      "text": "### Hash Functions\n\n> should look random, but be deterministic\n\n#### Modulo prime\n$$h(x) = x \\% p$$\n- for faster modulo: inverse multiplication with magic number\n- or use power of 2\n#### Tabulation hashing\n>lookup chunks with $r$ bits in table, XOR results\n\n- 3-independent\n- cache consumption, random state grows with key size",
+      "styleAttributes": {},
+      "x": 2640,
+      "y": 962,
+      "width": 500,
+      "height": 520
+    },
+    {
+      "id": "5addcbc51041ae8c",
+      "type": "text",
+      "text": "- **universal hashing**: collision probability $1/m$\n- **pairwise independence**: collision probability $1/m^2$\n- **k-independence**: collision of any $k$ distinct keys $1/m^k$",
+      "styleAttributes": {},
+      "x": 2350,
+      "y": 1520,
+      "width": 500,
+      "height": 120
+    },
+    {
+      "id": "a99b1c7fcdaf8c6e",
+      "type": "text",
+      "text": "### Direct Addressing\n>array with space for every possible key\n\n$\\mathcal{O}(1)$ but very easily wasted memory. only use for small/dense key ranges!",
+      "styleAttributes": {},
+      "x": 2640,
+      "y": 760,
+      "width": 500,
+      "height": 164
+    },
+    {
+      "id": "7692d0902f7fb9bb",
+      "type": "text",
+      "text": "`lookup(key)`\n`insert(key, value)`\n`remove(key)`",
+      "styleAttributes": {},
+      "x": 2900,
+      "y": 1520,
+      "width": 240,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "58473bae63106a60",
+      "type": "text",
+      "text": "### Concise Hashtable\n> compress free slots, use bitmap\n\n- 32b pattern of slots\n- 32bit prefix count\n- overflow table",
+      "styleAttributes": {},
+      "x": 1990,
+      "y": 1400,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "08966de74b365dda",
+      "type": "text",
+      "text": "**fill factor** $f$: ",
+      "styleAttributes": {},
+      "x": 2160,
+      "y": 1300,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "656c1bdec984e18d",
+      "type": "text",
+      "text": "### Static Perfect Hashing/FKS\n>2-level bulk creation:\n>1. $2 \\cdot (n-1)$ partitions\n>2. HT of size $r^2$ for $r$ entries in partition\n\n- re-hash/re-seed on collision\n- uses lots of space\n- 2 dependent cache misses",
+      "styleAttributes": {},
+      "x": 1330,
+      "y": 1340,
+      "width": 420,
+      "height": 300
+    },
+    {
+      "id": "fad9daa24e9196c3",
+      "type": "text",
+      "text": "### Static Hashing\n> no growth -> focus on lookup (OLAP)",
+      "styleAttributes": {},
+      "x": 1748,
+      "y": 1186,
+      "width": 385,
+      "height": 128
+    },
+    {
+      "id": "8aa25cec1579a20d",
+      "type": "text",
+      "text": "**structure-modification**\n- `split`\n- `merge`\n- `new root`",
+      "styleAttributes": {},
+      "x": 1690,
+      "y": 2140,
+      "width": 260,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "2a8c0523220ca79d",
+      "type": "text",
+      "text": "alternatives:\n- payloads in separate array\n- unsorted leaves\n- encode other data structure in node",
+      "styleAttributes": {},
+      "x": 2285,
+      "y": 2140,
+      "width": 390,
+      "height": 150
+    },
+    {
+      "id": "753886120db173a1",
+      "type": "text",
+      "text": "**per-node**\n- `lower bound`\n- `insert`\n- `delete`",
+      "styleAttributes": {},
+      "x": 1995,
+      "y": 2140,
+      "width": 215,
+      "height": 150,
+      "color": "6"
+    },
+    {
+      "id": "2699a694ee1bcc16",
+      "type": "text",
+      "text": "support ordered data",
+      "styleAttributes": {},
+      "x": 2315,
+      "y": 1880,
+      "width": 260,
+      "height": 60,
+      "color": "3"
+    },
+    {
+      "id": "9b7dac02ead3d8c2",
+      "type": "text",
+      "text": "### Cuckoo Hashing\n>2 hash tables w/ different hash functions\n\n- rearrangement can fail during insert -> rebuild w/ diff hash function\n- only for low $f$",
+      "styleAttributes": {},
+      "x": 1330,
+      "y": 762,
+      "width": 450,
+      "height": 204
+    },
+    {
+      "id": "5d3bf06d52149054",
+      "type": "text",
+      "text": "### Robin Hood Hashing\n>re-order elements during insertion based on **probe sequence length**",
+      "styleAttributes": {},
+      "x": 1330,
+      "y": 1080,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "3459badf8c9cc638",
+      "type": "text",
+      "text": "- fast computation\n- few collisions",
+      "styleAttributes": {},
+      "x": 2230,
+      "y": 1170,
+      "width": 240,
+      "height": 80,
+      "color": "2"
+    },
+    {
+      "id": "1f1df687473034fe",
+      "type": "text",
+      "text": "combination: first entry in HT, rest chained",
+      "styleAttributes": {},
+      "x": 1820,
+      "y": 900,
+      "width": 240,
+      "height": 84
+    },
+    {
+      "id": "2c4bcb12fb61648c",
+      "type": "text",
+      "text": "### Chaining\n>hash table positions has linked list\n\nfor constant avg access: max chain length $m$",
+      "styleAttributes": {},
+      "x": 2080,
+      "y": 760,
+      "width": 520,
+      "height": 140
+    },
+    {
+      "id": "e7d8b2f956ab2d48",
+      "type": "text",
+      "text": "### Open Addressing\n> entries in hash table, with wraparound\n\n- tombstones for deletion\n- needs low fill factor\n- fixed-sized groups + counter can alleviate clustering",
+      "styleAttributes": {},
+      "x": 2080,
+      "y": 924,
+      "width": 520,
+      "height": 216
+    },
+    {
+      "id": "1c3ae72689c26db1",
+      "type": "text",
+      "text": "**fence keys**: separators",
+      "styleAttributes": {},
+      "x": 1300,
+      "y": 2160,
+      "width": 320,
+      "height": 60
+    },
+    {
+      "id": "bd61f9774177611f",
+      "type": "text",
+      "text": "### Binary Search\n##### Standard\n- log2 n steps\n- 0.5 br misses per comparison\n- cache-unfriendly access pattern\n##### Branch-Free\n- uses data dependencies\n- `?` is compiled to `cmov`",
+      "styleAttributes": {},
+      "x": 3020,
+      "y": 1940,
+      "width": 360,
+      "height": 360
+    },
+    {
+      "id": "eb2384dd5516eb35",
+      "type": "text",
+      "text": "### Blocking Layout\n> SIMD x binary search\n\n- store frequently accessed keys together\n- improve locality of binary search",
+      "styleAttributes": {},
+      "x": 3460,
+      "y": 1940,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "5ab13f02069183a7",
+      "type": "text",
+      "text": "### Interpolation Search\n>guess positions in roughly linearly spread out data",
+      "styleAttributes": {},
+      "x": 3020,
+      "y": 2320,
+      "width": 480,
+      "height": 120
+    },
+    {
+      "id": "dd5cdf2f4fcce419",
+      "type": "text",
+      "text": "### Standard\n> exponential growth + copy",
+      "styleAttributes": {},
+      "x": 3020,
+      "y": 2560,
+      "width": 320,
+      "height": 120
+    },
+    {
+      "id": "e4c61dd18736d241",
+      "type": "text",
+      "text": "### Avoid copying\n>directory with pointers to chunks of exponentially increasing size",
+      "styleAttributes": {},
+      "x": 3390,
+      "y": 2560,
+      "width": 420,
+      "height": 120
+    },
+    {
+      "id": "a5956cc52fd9a915",
+      "type": "text",
+      "text": "### Linear Search\n- good locality, allows for SIMD\n- no sorting needed",
+      "styleAttributes": {},
+      "x": 3520,
+      "y": 2280,
+      "width": 290,
+      "height": 160
+    },
+    {
+      "id": "606f7228e488be27",
+      "type": "text",
+      "text": "node size:\n- minimum cache line\n- larger generally better\n- optimum for lookup bigger than for inserts",
+      "styleAttributes": {},
+      "x": 1690,
+      "y": 2300,
+      "width": 458,
+      "height": 160
+    },
+    {
+      "id": "b46fc5ee2adecc0b",
+      "type": "text",
+      "text": "make inner nodes larger than leaves?",
+      "styleAttributes": {},
+      "x": 1740,
+      "y": 2500,
+      "width": 359,
+      "height": 60
+    },
+    {
+      "id": "4eef69875ae3faf0",
+      "type": "text",
+      "text": "- nodes of size $b$\n- height: $\\log_b(n)$\n- comparisons: $log_2(n)$\n- insert: $log_b(n) \\cdot b$",
+      "styleAttributes": {},
+      "x": 1300,
+      "y": 2260,
+      "width": 320,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "51268e10951ac1a5",
+      "type": "text",
+      "text": "### Delete/merge\n##### Textbook\n>recursively merge/rebalance underfull nodes after a delete\n##### Simpler approaches\n- allow underfull pages\n- only remove completely empty nodes\n- only merge\n- only merge 1 level\n- only merge leaves\n- only merge at lower fill factor\n",
+      "styleAttributes": {},
+      "x": 1300,
+      "y": 2470,
+      "width": 320,
+      "height": 430
+    },
+    {
+      "id": "b91e48062e09820c",
+      "type": "text",
+      "text": "### Space consumption\n> guarantees only $\\geq 50\\%$\n\n- pathological case: insert in sorted order\n- no guarantees for variable-sized\n##### B\\*-tree\n>guarantees $66\\%$ fill factor\n\n- rebalance between 3 nodes\n- difficult to implement, slow\n##### XMerge\n>merge x nodes into x-1 nodes",
+      "styleAttributes": {},
+      "x": 1300,
+      "y": 2940,
+      "width": 320,
+      "height": 540
+    },
+    {
+      "id": "58b6d23acf1a3f84",
+      "type": "text",
+      "text": "```cpp\nu32 hints[hintCount]; // 64/keyHeadBytes\n...\npair<u32, u32> searchHints(KeyPrefix key) {\n\tfind index of lower bound in hints\n\tfind index of larger bound in hints\n\tscale up indices\n}\n```",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 1690,
+      "y": 3240,
+      "width": 550,
+      "height": 220,
+      "color": "7"
+    },
+    {
+      "id": "ec50ae6e4f5c209d",
+      "type": "text",
+      "text": "### Storing data\n##### Naively\n> pointers to dynamically allocated key\n\n- bad cache locality, many allocations\n##### Slotted Pages\n>decouple logical from physical ordering\n\n- compaction needed (onto new page?)\n- **key head in slot** optimization (first 4B of key into slot)\n##### Hints\n> extract equi-distant heads and store consecutively\n\n- eg 1 cache line\n- narrow down window for binary search",
+      "styleAttributes": {},
+      "x": 1690,
+      "y": 2660,
+      "width": 550,
+      "height": 560
+    },
+    {
+      "id": "cd670416ae2f2921",
+      "type": "text",
+      "text": "### Binary-comparable keys\n>lexicographic order may not be desirable\n\n- ASCII: works\n- unsigned integers: swap bytes on little endian\n- signed integer: flip sign + swap bytes\n- floats: classify (pos/neg, norm/denorm/Nan/inf/0), then reorder\n- unicode strings: libraries\n- compound keys: append individual values",
+      "styleAttributes": {},
+      "x": 3580,
+      "y": 3853,
+      "width": 606,
+      "height": 330
+    },
+    {
+      "id": "9cde90a953b9636f",
+      "type": "file",
+      "file": "Effect of height optimizations.png",
+      "styleAttributes": {},
+      "x": 3580,
+      "y": 4337,
+      "width": 400,
+      "height": 213
+    },
+    {
+      "id": "b44131c941accd05",
+      "type": "text",
+      "text": "\n| Analysis | Case               | Hash table       | Search tree                   | Trie             |\n| -------- | ------------------ | ---------------- | ----------------------------- | ---------------- |\n| usual    |                    | $\\mathcal{O}(1)$ | $\\mathcal{O}(\\log n)$         | $\\mathcal{O}(k)$ |\n| fair     | fixed-sized keys   | $\\mathcal{O}(1)$ | $\\mathcal{O}(\\log n)$         | $\\mathcal{O}(1)$ |\n|          | keys of length $k$ | $\\mathcal{O}(k)$ | $\\mathcal{O}(\\log n \\cdot k)$ | $\\mathcal{O}(k)$ |",
+      "styleAttributes": {},
+      "x": 3608,
+      "y": 4755,
+      "width": 578,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "7ab564c7014bedf7",
+      "type": "text",
+      "text": "- very efficient in main memory\n- less so for long strings",
+      "styleAttributes": {},
+      "x": 1300,
+      "y": 3680,
+      "width": 318,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "3dd1b6bcc0681b6b",
+      "type": "text",
+      "text": "### Simple Physical Node Layout\n\n>$s$ bits of key used -> array of $2^s$ pointers\n\n- trade-off: tree height vs node size",
+      "styleAttributes": {},
+      "x": 2126,
+      "y": 3843,
+      "width": 440,
+      "height": 160
+    },
+    {
+      "id": "890f96012f089f8d",
+      "type": "text",
+      "text": "**trie**/**radix tree**/**prefix tree**/**digital tree**: keys along paths",
+      "styleAttributes": {},
+      "x": 2978,
+      "y": 3680,
+      "width": 568,
+      "height": 50,
+      "color": "7"
+    },
+    {
+      "id": "c0d464826df88a2a",
+      "type": "text",
+      "text": "### $k$-constrained Tries\ncan be optimized for number of nodes or for height",
+      "styleAttributes": {},
+      "x": 1736,
+      "y": 4040,
+      "width": 482,
+      "height": 122
+    },
+    {
+      "id": "0b6b5e71e8be07e2",
+      "type": "text",
+      "text": "#ART",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 2414,
+      "y": 4076,
+      "width": 122,
+      "height": 50
+    },
+    {
+      "id": "8ca971f822a4a2f8",
+      "type": "text",
+      "text": "### ART\n>node size adapts to number of children\n\n- $s=8$\n##### Node4, Node16\n\n>4/16 key bytes + 4/16 child pointers\n##### Node48\n\n> 256 offsets + 48 child pointers\n\n- index array with key byte\n- get offset into pointer array\n##### Node256\n>direct addressing",
+      "styleAttributes": {},
+      "x": 2536,
+      "y": 4072,
+      "width": 400,
+      "height": 540,
+      "color": "7"
+    },
+    {
+      "id": "4b683642f82ec537",
+      "type": "text",
+      "text": "### Patricia Trie\n> remove all one-way nodes\n##### Path compression\n- nodes hold prefixes\n- ensure static node size: store `MAX_LENGTH` of prefix, look up rest using `load_key()`\n\t- key of leaf must contain prefix\n##### Lazy expansion\n- make new nodes only as needed to distinguish-> leaves hold rest\n- expand when inserting until keys differ\n- can still have one-way nodes before last differing digit",
+      "styleAttributes": {},
+      "x": 3005,
+      "y": 4202,
+      "width": 520,
+      "height": 482
+    },
+    {
+      "id": "3dc14b5fba03f924",
+      "type": "text",
+      "text": "### Separator choice\n> short keys in inner nodes usually better\n##### Approximate median\n> shortest key in window around median\n##### Suffix truncation\n>use just enough of a key as separator to distinguish\n##### Prefix truncation\n> extract common prefix between all nodes\n\n- insert may cause common prefix to shrink\n\n> use common prefix of fence keys instead",
+      "styleAttributes": {},
+      "x": 2270,
+      "y": 2660,
+      "width": 420,
+      "height": 560
+    },
+    {
+      "id": "73d968003858f4ca",
+      "type": "text",
+      "text": "common prefix with fence keys?",
+      "styleAttributes": {},
+      "x": 2380,
+      "y": 3120,
+      "width": 260,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "56c2051a9c51dbb6",
+      "type": "text",
+      "text": "arrays have better locality than linked list",
+      "styleAttributes": {},
+      "x": 3480,
+      "y": 3175,
+      "width": 260,
+      "height": 80,
+      "color": "3"
+    },
+    {
+      "id": "61916fb50379af28",
+      "type": "text",
+      "text": "### Binary Search Tree\n>one key/value pair + 2 child pointers per node\n\n- rebalancing :c\n- cache locality :c\n- pointer based :3",
+      "styleAttributes": {},
+      "x": 2850,
+      "y": 3180,
+      "width": 260,
+      "height": 300
+    },
+    {
+      "id": "1558e639068677ce",
+      "type": "text",
+      "text": "little endian:\nbig endian:",
+      "styleAttributes": {},
+      "x": 3980,
+      "y": 4101,
+      "width": 260,
+      "height": 188
+    },
+    {
+      "id": "1a4b0f8901e69251",
+      "type": "text",
+      "text": "### Linearized node layout\n> make node into a compact, searchable bit string\n\n##### Partial Keys\n>only store discriminative bits\n\n- dense partial key: discriminative bits in raw keys\n- sparse partial key: disciminative bits in in dense keys + 0\n\t- faster insert\n##### Node layouts\n1. position-sequence: store which bits are used\n2. single-mask\n3. multi-mask: for very long keys, aka multiple mask for multiple 64bit integers -> avoid long skips",
+      "styleAttributes": {},
+      "x": 1318,
+      "y": 4260,
+      "width": 400,
+      "height": 660,
+      "color": "7"
+    },
+    {
+      "id": "5791775720d70e92",
+      "type": "text",
+      "text": "### HOT\n- $k=32$\n- no unused pointers through copy on write\n- deterministic, has minimum height, is recursive\n##### Insert\n1. **normal** insert: add new entry into node\n2. **leaf node pushdown**: entry with no child gets a child\n3. **parent pull up**: propagate overflows to parent nodes\n4. overflows can be resolved by\n\t- **new root node creation**\n\t- **intermediate node creation**",
+      "styleAttributes": {},
+      "x": 1756,
+      "y": 4260,
+      "width": 441,
+      "height": 517,
+      "color": "7"
+    },
+    {
+      "id": "952edfe90592d0b1",
+      "type": "text",
+      "text": "lookup (4B keys)\n- 20M lookups/s (dense)\n- 10M lookups/second (sparse)\n\ninsert\n- 5~15M inserts/second",
+      "styleAttributes": {},
+      "x": 2238,
+      "y": 4478,
+      "width": 275,
+      "height": 246,
+      "color": "2"
+    },
+    {
+      "id": "a1db9579d38bd191",
+      "type": "text",
+      "text": "node layout: binary patricia trie",
+      "styleAttributes": {},
+      "x": 2160,
+      "y": 4825,
+      "width": 216,
+      "height": 95,
+      "color": "7"
+    },
+    {
+      "id": "f1fc23b9485e6594",
+      "type": "text",
+      "text": "### Flash/SSDs\n>NAND gates\n\n- SSD: many (~100) flash chips\n- directly attached to PCIe (NVMe interface)\n- higher bandwith, much faster random access",
+      "styleAttributes": {},
+      "x": -2522,
+      "y": 700,
+      "width": 500,
+      "height": 220
+    },
+    {
+      "id": "64b60c520f4c74fe",
+      "type": "text",
+      "text": "### Disk\n>rotating magnetic disk\n\n- in-place overwrites\n- cheap but slow",
+      "styleAttributes": {},
+      "x": -2862,
+      "y": 700,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "12645e83384094ae",
+      "type": "text",
+      "text": "- pointer-based access through CPU cache\n- CPU cache may write changes whenever\n- explicit write/back/flush instructions\n\t- `_mm_clwb(ptr)`, `__mm_sfence()`\n\t- data structures need to be consistent -> **failure atomicity**",
+      "styleAttributes": {},
+      "x": -2025,
+      "y": 400,
+      "width": 430,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "a7a4a9dc56fedd74",
+      "type": "text",
+      "text": "- synchronous: read/write/fsync\n\t- `int fd = open(path, O_DIRECT | O_RDWR/O_WRONLY/O_RDONLY)`\n\t- `ssize_t pread(int fd, void *buf, size_t count, off_t offset)`\n\t- `ssize_t pwrite(int fd, const void *buf, size_t countm off_t offset)`\n- asynchronous/batched: libaio, io_uring\n\t- one queue for async requests, one queue for async responses\n\t- ring space between kernel and user\n\t- submit via syscall",
+      "styleAttributes": {},
+      "x": -2917,
+      "y": 340,
+      "width": 829,
+      "height": 260,
+      "color": "5"
+    },
+    {
+      "id": "707ef47441da69a5",
+      "type": "file",
+      "file": "Pasted image 20240808131114.png",
+      "styleAttributes": {},
+      "x": -3501,
+      "y": 879,
+      "width": 482,
+      "height": 184
+    },
+    {
+      "id": "bb7e92c9d8e39836",
+      "type": "text",
+      "text": "### Persistent Memory\n>directly attached to memory bus\n\n- internally: 256B blocks",
+      "styleAttributes": {},
+      "x": -1980,
+      "y": 700,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "99454436d2707c70",
+      "type": "text",
+      "text": "### FP-Tree\n>B-tree optimized for PMem: inner nodes are recovered from leaves on crash\n\n- leaves unsorted with hash to speed up search",
+      "styleAttributes": {},
+      "x": -1400,
+      "y": 518,
+      "width": 690,
+      "height": 182
+    },
+    {
+      "id": "7319af51d4d6c731",
+      "type": "text",
+      "text": "### Skip List\n>sorted linked list + shortcuts on top",
+      "styleAttributes": {},
+      "x": 3135,
+      "y": 3180,
+      "width": 260,
+      "height": 150
+    },
+    {
+      "id": "2f08df559f7d0bf9",
+      "type": "text",
+      "text": "### Combinations\n- Java Hashmap: fallback to BST\n- Masstree: B-tree for 8-byte regions\n- Hat-trie: trie with hash tables as leaves",
+      "styleAttributes": {},
+      "x": 4140,
+      "y": 2710,
+      "width": 400,
+      "height": 180
+    },
+    {
+      "id": "eb0dec40dd22c46c",
+      "type": "text",
+      "text": "optimizations\n- instruction reordering\n- code elimination\n- data being kept in register",
+      "styleAttributes": {},
+      "x": -3260,
+      "y": 2265,
+      "width": 312,
+      "height": 160
+    },
+    {
+      "id": "cfd84160ec9a1f05",
+      "type": "text",
+      "text": "### Processor\n- multiple cores, each with\n\t- registers, write buffers, caches (L1, L2)\n- shared cache (L3)\n- shared main memory",
+      "styleAttributes": {},
+      "x": -2952,
+      "y": 1515,
+      "width": 440,
+      "height": 200
+    },
+    {
+      "id": "21c1d78db40df0bb",
+      "type": "text",
+      "text": "limitation: latency explodes for higher bandwidths\n- 100ns at 10GB/s vs 300ns at 50+GB/s",
+      "styleAttributes": {},
+      "x": -2952,
+      "y": 1775,
+      "width": 440,
+      "height": 100
+    },
+    {
+      "id": "47d2391dbb41c642",
+      "type": "text",
+      "text": "### Cache line ping pong\n>cores sharing cache lines, modifications have to be communicated\n\n- goes over L3/main memory -> slowdown by factor 50 :c",
+      "styleAttributes": {},
+      "x": -2022,
+      "y": 1620,
+      "width": 340,
+      "height": 250
+    },
+    {
+      "id": "9cfc0ef9b133c9bc",
+      "type": "text",
+      "text": "### Cache\n\n>organized in **cache lines** (64B)\n\n##### Cache coherency protocol\n> illusion of single main memory\n\nexamples:\n- **MESI** protocol\n\t- cache line states: modified, exclusive, shared, invalid\n- **MESIF** protocol\n\t- additionally: forward\n\n-> expensive communication between cores :c",
+      "styleAttributes": {},
+      "x": -2432,
+      "y": 1515,
+      "width": 344,
+      "height": 460
+    },
+    {
+      "id": "f2b88ffe6f91650c",
+      "type": "text",
+      "text": "\n| Name        | Size   | Latency |\n| ----------- | ------ | ------- |\n| L1 Cache    | 200KiB | 1ns     |\n| L2 Cache    | 3MiB   | 5ns     |\n| L3 Cache    | 16MiB  | 50ns    |\n| main memory | GB     | 100ns   |\n| PMem        | GB/TB  | 500ns   |\n| SSD         | GB/TB  | 100us   |\n| disk        | GB/TB  | 10ms    |\n",
+      "styleAttributes": {},
+      "x": -3392,
+      "y": 1675,
+      "width": 340,
+      "height": 300,
+      "color": "8"
+    },
+    {
+      "id": "df7ec31bbd4e034e",
+      "type": "text",
+      "text": "```cpp\nint v[128];\nint next;\nvoid append(int x) {\n\tv[next] = x;\n\t_mm_clwb(&v[next]);\n\t_mm_sfence();\n\tnext++;\n\t_mm_clwb(&next);\n\t_mm_sfence();\n}\n```",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -1400,
+      "y": 180,
+      "width": 458,
+      "height": 310
+    },
+    {
+      "id": "4e2062e54f5d722b",
+      "type": "text",
+      "text": "TODO: lock flavors",
+      "styleAttributes": {},
+      "x": -3260,
+      "y": 2825,
+      "width": 720,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "0239cfb9f9651022",
+      "type": "text",
+      "text": "### Atomics on x86-64\n- `lock` prefix\n\t- `lock cmpxchg`, `lock add`\n\t- `xchg` implicitly locked\n\n(fences for memory order but complicated and mostly unnecessary)\n",
+      "styleAttributes": {},
+      "x": -2460,
+      "y": 2265,
+      "width": 480,
+      "height": 240
+    },
+    {
+      "id": "3575f59359e5154e",
+      "type": "text",
+      "text": "### Total Store Order\n>strong memory model\n- loads/writes not reordered wrt other ops of the same type\n- writes buffered, reads can bypass writes\n- fences/locked writes flush write buffer\n\nother architectures: **weakly-ordered**\n-> more explicit fences, more CPU reordering freedom",
+      "styleAttributes": {},
+      "x": -2460,
+      "y": 2545,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "id": "40230f1e2b61eb7e",
+      "type": "text",
+      "text": "### `std::atomic`\n>atomic loads/stores, well-defined ordering semantics\n\n**compare-and-swap**:\n- `bool std::atomic_compare_exchange_strong(T& expected, T desired)`\n- default: sequential consistency (`std::memory_order::memory_order_seq_cst`)\n- non-atomic may move before store: `std::memory_order::memory_order_release`, passed in `store()`\n- no guarantees: `std::memory_order::memory_order_relaxed`",
+      "styleAttributes": {},
+      "x": -3260,
+      "y": 2465,
+      "width": 720,
+      "height": 320,
+      "color": "7"
+    },
+    {
+      "id": "ba93e2173d5c572c",
+      "type": "text",
+      "text": "C++11: race conditions are UB",
+      "styleAttributes": {},
+      "x": -2900,
+      "y": 2265,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "10c772fd74460fa4",
+      "type": "text",
+      "text": "L3 for cheaper communication (~20ns vs ~70ns)",
+      "styleAttributes": {},
+      "x": -2672,
+      "y": 2055,
+      "width": 320,
+      "height": 80
+    },
+    {
+      "id": "8c060a6950a17163",
+      "type": "text",
+      "text": "**Simultaneous Multithreading (SMT)**\n\n>twin threads sharing registers/ports/L1 cache",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "x": -2904,
+      "y": 1915,
+      "width": 344,
+      "height": 120
+    },
+    {
+      "id": "ff24ab6b9b67b053",
+      "type": "text",
+      "text": "- data stored on pages (4KB, 16KB)\n- pages combined to blocks (2MB)\n- only overwrites of full blocks possible\n- **flash translation layer**: r/w interface, page placement, garbage collection, wear leveling",
+      "styleAttributes": {},
+      "x": -2499,
+      "y": 980,
+      "width": 454,
+      "height": 180,
+      "color": "7"
+    },
+    {
+      "id": "154f2f67fe32f995",
+      "type": "text",
+      "text": "single-level cell: transistor storing 1 bit\nnow: 2 (MLC), 3 (TLC), 4 (QLC)",
+      "styleAttributes": {},
+      "x": -2088,
+      "y": 943,
+      "width": 260,
+      "height": 120,
+      "color": "7"
+    },
+    {
+      "id": "cecb8a167453c2ec",
+      "type": "text",
+      "text": "### Zoned Namespaces\n>expose out-of-place nature of device\n\n- zones can only be written to sequentially\n- requires implementation of garbage collection",
+      "styleAttributes": {},
+      "x": -2890,
+      "y": 971,
+      "width": 357,
+      "height": 263,
+      "color": "7"
+    },
+    {
+      "id": "3b763164b97dba1d",
+      "type": "text",
+      "text": "### Implementations\n##### Intel\n- introduced: Haswell (2013), disabled bc bug\n- enabled on Skylake\n##### IBM\n- Power8, Blue Gene, System z\n##### AMD\n- none :/",
+      "styleAttributes": {},
+      "x": -1690,
+      "y": 2175,
+      "width": 324,
+      "height": 445
+    },
+    {
+      "id": "d6691591a0607d04",
+      "type": "text",
+      "text": "- L1 as buffer for transactional writes\n- additional read set tracking\n- modified cache coherency protocol to detect r/w and w/w conflicts",
+      "styleAttributes": {},
+      "x": -1687,
+      "y": 2663,
+      "width": 651,
+      "height": 125,
+      "color": "7"
+    },
+    {
+      "id": "1d4c623fbe4405b2",
+      "type": "text",
+      "text": "- use transaction model to manage concurrency\n- implemented in software (STM) or hardware (HTM)",
+      "styleAttributes": {},
+      "x": -1344,
+      "y": 2175,
+      "width": 324,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "d3257cf6adcfa276",
+      "type": "text",
+      "text": "TODO: limitations, lock elision",
+      "styleAttributes": {},
+      "x": -1344,
+      "y": 2355,
+      "width": 260,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "5c4a11acf2c3a63f",
+      "type": "text",
+      "text": "### Hardware Lock Elision\n- optimistically start HTM transaction\n- if conflict: acquire lock + restart\n\n> special instruction prefixes: `xacquire`, `xrelease` for load/store",
+      "styleAttributes": {},
+      "x": -1344,
+      "y": 2435,
+      "width": 568,
+      "height": 185
+    },
+    {
+      "id": "5124cb3803d7ee78",
+      "type": "file",
+      "file": "Pasted image 20240808120941.png",
+      "styleAttributes": {},
+      "x": -2010,
+      "y": 1088,
+      "width": 399,
+      "height": 155
+    },
+    {
+      "id": "d1f147401f1cc12a",
+      "type": "text",
+      "text": "### Read/Write amplification\n>how much data is read/written physically to read/write one logical entry?",
+      "styleAttributes": {},
+      "x": -2007,
+      "y": 1320,
+      "width": 646,
+      "height": 110,
+      "color": "8"
+    },
+    {
+      "id": "2abe7c5815cee2cf",
+      "type": "text",
+      "text": "**graveyard**: holds nodes removed by some thread\n- should be synchronized + fast\n- singly linked list\n\t- add: CAS head\n\t- remove: head = null, loop through, re-add remaining\n- alternatives: per-thread lists, array with atomic head offset, linked-list/array hybrid",
+      "styleAttributes": {},
+      "x": -2945,
+      "y": 4525,
+      "width": 605,
+      "height": 240,
+      "color": "7"
+    },
+    {
+      "id": "d54a4497e4ce00cf",
+      "type": "text",
+      "text": "```cpp\nstatic constexpr u64 WRITE_FLAG = 0b10;\nstatic constexpr u64 OBSOLETE_FLAG = 0b1;\n```",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -1464,
+      "y": 3643,
+      "width": 460,
+      "height": 120,
+      "color": "7"
+    },
+    {
+      "id": "67628f12cb91a17b",
+      "type": "text",
+      "text": "### Reference Counting\n> counters for nodes\n\n| +    | -             |\n| ---- | ------------- |\n| easy | doesn't scale |",
+      "styleAttributes": {},
+      "x": -2800,
+      "y": 3995,
+      "width": 285,
+      "height": 180
+    },
+    {
+      "id": "26e19fc7c2f8b850",
+      "type": "text",
+      "text": "### Epoch-based memory reclamation\n>global + local epoch counter\n>- set local := global, do operation, set local := $\\infty$\n>- to be deleted: tag with global epoch\n>- safe to delete when marked < min of all local epochs\n\n| +                                  | -                                              |\n| ---------------------------------- | ---------------------------------------------- |\n| low overhead, just wrap operations | single thread can block all memory reclamation |\n| scales well                        |                                                |\nimplementation: remove locks, puts nodes into graveyard",
+      "styleAttributes": {},
+      "x": -2480,
+      "y": 3995,
+      "width": 466,
+      "height": 480
+    },
+    {
+      "id": "4b8efa3a78732e7e",
+      "type": "text",
+      "text": "BM might not need MR",
+      "styleAttributes": {},
+      "x": -2797,
+      "y": 4225,
+      "width": 165,
+      "height": 180
+    },
+    {
+      "id": "fa0c1262440b68b8",
+      "type": "text",
+      "text": "### Lock Coupling\n>max 2 locks at a time, interleave lock acquisition/releases\n\n| +                   | -             |\n| ------------------- | ------------- |\n| easy implementation | doesn't scale |\n| no restarts         |               |",
+      "styleAttributes": {},
+      "x": -1852,
+      "y": 3745,
+      "width": 360,
+      "height": 300
+    },
+    {
+      "id": "3968ccae00313b0b",
+      "type": "text",
+      "text": "### Optimistic Lock Coupling\n> locks with update counters\n\n**write**:\n- locks\n- increments counter when unlocking\n- unmodified nodes are not locked\n\n**read**:\n- no locks -> optimistic\n- check counters for concurrent modifications (restart)\n\n| +                   | -        |\n| ------------------- | -------- |\n| easy implementation | restarts |\n| scalable            |          |\n",
+      "styleAttributes": {},
+      "x": -1392,
+      "y": 3865,
+      "width": 330,
+      "height": 600
+    },
+    {
+      "id": "b7d5a5918f4a64ea",
+      "type": "text",
+      "text": "how to make sure nodes in lock-free data structures aren't used/can be deleted?",
+      "styleAttributes": {},
+      "x": -2797,
+      "y": 3905,
+      "width": 700,
+      "height": 60,
+      "color": "3"
+    },
+    {
+      "id": "33772debfcd98160",
+      "type": "text",
+      "text": "### Optimistic\n> 1. traverse without locks\n> 2. lock `predecessor` and `current`\n> 3. traverse again, check that both are still valid, else restart\n\n| +                        | -                |\n| ------------------------ | ---------------- |\n| lock contention unlikely | 2x traverse      |\n|                          | readers lock too |",
+      "styleAttributes": {},
+      "x": -1852,
+      "y": 4085,
+      "width": 360,
+      "height": 380
+    },
+    {
+      "id": "1c55a4afc61d6f86",
+      "type": "text",
+      "text": "### Hazard pointers\n>store pointers into limited number of thread-local locations\n\n- before reclamation: check if some thread has hazard pointer referencing node\n- stores have to be sequentially consistent\n\n| +            | -             |\n| ------------ | ------------- |\n| non-blocking | high overhead |\n|              | invasive      |\n##### With OS support\n>`membarrier` syscall that interrupts all threads, flushing the write buffer\n\n- allows for `release` semantics when storing HPs\n- batching would be good",
+      "styleAttributes": {},
+      "x": -3260,
+      "y": 3905,
+      "width": 440,
+      "height": 570
+    },
+    {
+      "id": "f0667aa5cf78012a",
+      "type": "text",
+      "text": "### C++ concurrency on x86\n1. data races are UB\n2. sequentially-consistent loads: fast\n3. sequentially-consistent stores: slow\n4. delayed stores benefit from `release`\n5. atomic ops are always seq. cons.\n6. scalable code should avoid cache invalidations",
+      "styleAttributes": {},
+      "x": -2769,
+      "y": 2985,
+      "width": 458,
+      "height": 260
+    },
+    {
+      "id": "b8ac2aa77fb7e686",
+      "type": "text",
+      "text": "### ABA problem\n>pointer changed A -> B -> A, CAS may succeed even thought value was changed",
+      "styleAttributes": {},
+      "x": -3162,
+      "y": 3305,
+      "width": 563,
+      "height": 140
+    },
+    {
+      "id": "21d355cdb1f94739",
+      "type": "text",
+      "text": "### Shared Concurrent Counters\n1. global atomic counter\n2. per-thread counters added on demand\n3. approximate counter storing log of counter, incremented probabilistically",
+      "styleAttributes": {},
+      "x": -2842,
+      "y": 3505,
+      "width": 660,
+      "height": 180
+    },
+    {
+      "id": "4132286819e4cff0",
+      "type": "text",
+      "text": "### Coarse-Grained Locking\n>single lock for entire data structure\n\n| +                   | -             |\n| ------------------- | ------------- |\n| easy implementation | doesn't scale |",
+      "styleAttributes": {},
+      "x": -1464,
+      "y": 2940,
+      "width": 451,
+      "height": 200
+    },
+    {
+      "id": "f868ebe6119da0be",
+      "type": "text",
+      "text": "| Class                | Definition                                               |\n| -------------------- | -------------------------------------------------------- |\n| **wait-free**        | operations guaranteed to succeed in constant no of steps |\n| **lock-free**        | overall progress guaranteed                              |\n| **obstruction-free** | progress only if no interference from other threads      |",
+      "styleAttributes": {},
+      "x": -1852,
+      "y": 2940,
+      "width": 360,
+      "height": 320,
+      "color": "8"
+    },
+    {
+      "id": "9c3544869e0ffcb1",
+      "type": "text",
+      "text": "### Read-Optimized Write Exclusion\n>`markers` for logically deleting keys\n\n**contains**: check marker -> wait-free\n\n**add/remove**: lock `predecessor` + `current`, check validity, update pointers\n- in case of `remove`: mark before updating pointers\n\n| +           | -                         |\n| ----------- | ------------------------- |\n| 1 traversal | locking for insert/remove |\n| scalable    |                           |",
+      "styleAttributes": {},
+      "x": -1464,
+      "y": 3185,
+      "width": 460,
+      "height": 400
+    },
+    {
+      "id": "4c676ddff30bfbdd",
+      "type": "text",
+      "text": "### Lock-free List\n> marker in `next` pointer\n\n**contains**: check marker -> wait-free\n\n**insert/remove**: remove marked nodes using `CAS` (restart if necessary) -> lock-free\n\n| +                 | -                        |\n| ----------------- | ------------------------ |\n| contains succeeds | restarts (insert/remove) |\n| scalable          |                          |",
+      "styleAttributes": {},
+      "x": -1852,
+      "y": 3305,
+      "width": 360,
+      "height": 380
+    },
+    {
+      "id": "8af7dde60aa64d25",
+      "type": "text",
+      "text": "### Sequential consistency\n>the result of any execution is the same as if the operations of all the processors were executed in some sequential order, and the operations of each individual processor appear in this sequence in the order specified by its program",
+      "styleAttributes": {},
+      "x": -3725,
+      "y": 3525,
+      "width": 500,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "fce09f30b31b5e53",
+      "styleAttributes": {},
+      "fromNode": "bf853196a010fad4",
+      "fromSide": "left",
+      "toNode": "5addcbc51041ae8c",
+      "toSide": "top",
+      "label": "properties"
+    },
+    {
+      "id": "717b39c761cd4d38",
+      "styleAttributes": {},
+      "fromNode": "bf853196a010fad4",
+      "fromSide": "left",
+      "toNode": "3459badf8c9cc638",
+      "toSide": "right"
+    },
+    {
+      "id": "cb2a7e350b39140f",
+      "styleAttributes": {},
+      "fromNode": "2c4bcb12fb61648c",
+      "fromSide": "left",
+      "toNode": "1f1df687473034fe",
+      "toSide": "top"
+    },
+    {
+      "id": "5bfb7f5dadc3fea8",
+      "styleAttributes": {},
+      "fromNode": "e7d8b2f956ab2d48",
+      "fromSide": "left",
+      "toNode": "1f1df687473034fe",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e7b545a5500b42c3",
+      "styleAttributes": {},
+      "fromNode": "e7d8b2f956ab2d48",
+      "fromSide": "left",
+      "toNode": "5d3bf06d52149054",
+      "toSide": "right",
+      "label": "improvement for\nlarger fill factors"
+    },
+    {
+      "id": "89188b5cb7522daa",
+      "styleAttributes": {},
+      "fromNode": "e7d8b2f956ab2d48",
+      "fromSide": "left",
+      "toNode": "9b7dac02ead3d8c2",
+      "toSide": "bottom",
+      "label": "O(1) lookup"
+    },
+    {
+      "id": "86907e180e4785e8",
+      "styleAttributes": {},
+      "fromNode": "fad9daa24e9196c3",
+      "fromSide": "bottom",
+      "toNode": "656c1bdec984e18d",
+      "toSide": "right"
+    },
+    {
+      "id": "9f5a1231f763a04e",
+      "styleAttributes": {
+        "path": "short-dashed"
+      },
+      "fromNode": "e7d8b2f956ab2d48",
+      "fromSide": "left",
+      "toNode": "58473bae63106a60",
+      "toSide": "top"
+    },
+    {
+      "id": "3f1d339dc5a84433",
+      "styleAttributes": {},
+      "fromNode": "fad9daa24e9196c3",
+      "fromSide": "bottom",
+      "toNode": "58473bae63106a60",
+      "toSide": "left"
+    },
+    {
+      "id": "6e030a3be6574543",
+      "styleAttributes": {},
+      "fromNode": "bd61f9774177611f",
+      "fromSide": "right",
+      "toNode": "eb2384dd5516eb35",
+      "toSide": "left"
+    },
+    {
+      "id": "0a9b2864aa7d89f3",
+      "styleAttributes": {},
+      "fromNode": "8aa25cec1579a20d",
+      "fromSide": "right",
+      "toNode": "753886120db173a1",
+      "toSide": "left",
+      "toEnd": "none",
+      "color": "6"
+    },
+    {
+      "id": "700760d57df3e735",
+      "styleAttributes": {},
+      "fromNode": "753886120db173a1",
+      "fromSide": "right",
+      "toNode": "503aeb83dd6bfaf4",
+      "toSide": "top"
+    },
+    {
+      "id": "2fc402d9f09d484c",
+      "styleAttributes": {
+        "path": null
+      },
+      "fromNode": "503aeb83dd6bfaf4",
+      "fromSide": "right",
+      "toNode": "a3e57f3859ade622",
+      "toSide": "left",
+      "label": "array of sorted key/value pairs"
+    },
+    {
+      "id": "3ffb6e7952cc46ae",
+      "styleAttributes": {},
+      "fromNode": "503aeb83dd6bfaf4",
+      "fromSide": "right",
+      "toNode": "2a8c0523220ca79d",
+      "toSide": "bottom"
+    },
+    {
+      "id": "cf24d2c4f7e46a91",
+      "styleAttributes": {},
+      "fromNode": "503aeb83dd6bfaf4",
+      "fromSide": "left",
+      "toNode": "606f7228e488be27",
+      "toSide": "right"
+    },
+    {
+      "id": "9ad485be50a0c5d9",
+      "styleAttributes": {},
+      "fromNode": "606f7228e488be27",
+      "fromSide": "bottom",
+      "toNode": "b46fc5ee2adecc0b",
+      "toSide": "top"
+    },
+    {
+      "id": "94d23f89b6a23e0a",
+      "styleAttributes": {},
+      "fromNode": "a3e57f3859ade622",
+      "fromSide": "bottom",
+      "toNode": "56c2051a9c51dbb6",
+      "toSide": "top"
+    },
+    {
+      "id": "09e23723fee3f5f9",
+      "styleAttributes": {},
+      "fromNode": "7319af51d4d6c731",
+      "fromSide": "right",
+      "toNode": "56c2051a9c51dbb6",
+      "toSide": "left"
+    },
+    {
+      "id": "0b7c89aac6d41903",
+      "styleAttributes": {},
+      "fromNode": "8ca971f822a4a2f8",
+      "fromSide": "left",
+      "toNode": "952edfe90592d0b1",
+      "toSide": "top"
+    },
+    {
+      "id": "62e9ced016c3bb5c",
+      "styleAttributes": {},
+      "fromNode": "4b683642f82ec537",
+      "fromSide": "right",
+      "toNode": "9cde90a953b9636f",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "2067b50f0ea0a955",
+      "styleAttributes": {},
+      "fromNode": "3dd1b6bcc0681b6b",
+      "fromSide": "right",
+      "toNode": "8ca971f822a4a2f8",
+      "toSide": "top",
+      "label": "fix span"
+    },
+    {
+      "id": "ded2d7a056a47276",
+      "styleAttributes": {},
+      "fromNode": "3dd1b6bcc0681b6b",
+      "fromSide": "left",
+      "toNode": "c0d464826df88a2a",
+      "toSide": "top",
+      "label": "fix max fanout k"
+    },
+    {
+      "id": "30f2b8fbbe3714e7",
+      "styleAttributes": {},
+      "fromNode": "c0d464826df88a2a",
+      "fromSide": "bottom",
+      "toNode": "5791775720d70e92",
+      "toSide": "top",
+      "toEnd": "none",
+      "label": "height-optimized"
+    },
+    {
+      "id": "aceddbebbed8bc0a",
+      "styleAttributes": {},
+      "fromNode": "c0d464826df88a2a",
+      "fromSide": "left",
+      "toNode": "1a4b0f8901e69251",
+      "toSide": "top"
+    },
+    {
+      "id": "055de6993ff26388",
+      "styleAttributes": {},
+      "fromNode": "890f96012f089f8d",
+      "fromSide": "left",
+      "toNode": "3dd1b6bcc0681b6b",
+      "toSide": "top",
+      "label": "nodes"
+    },
+    {
+      "id": "f3d017d57b666cd2",
+      "styleAttributes": {},
+      "fromNode": "890f96012f089f8d",
+      "fromSide": "bottom",
+      "toNode": "4b683642f82ec537",
+      "toSide": "top",
+      "label": "optimize"
+    },
+    {
+      "id": "3c32d9d6abd9de70",
+      "styleAttributes": {},
+      "fromNode": "890f96012f089f8d",
+      "fromSide": "right",
+      "toNode": "cd670416ae2f2921",
+      "toSide": "top",
+      "label": "keys"
+    },
+    {
+      "id": "a8765a1a64a07481",
+      "styleAttributes": {},
+      "fromNode": "4bcff4ab0e450b05",
+      "fromSide": "right",
+      "toNode": "2f08df559f7d0bf9",
+      "toSide": "top"
+    },
+    {
+      "id": "e4e45ce74c93a662",
+      "styleAttributes": {},
+      "fromNode": "082ff9175c2c0c51",
+      "fromSide": "right",
+      "toNode": "2f08df559f7d0bf9",
+      "toSide": "left"
+    },
+    {
+      "id": "7f623d05115ba97a",
+      "styleAttributes": {},
+      "fromNode": "29662d6037147f6a",
+      "fromSide": "right",
+      "toNode": "2f08df559f7d0bf9",
+      "toSide": "bottom"
+    },
+    {
+      "id": "d0441944472bdd9b",
+      "styleAttributes": {},
+      "fromNode": "5791775720d70e92",
+      "fromSide": "bottom",
+      "toNode": "a1db9579d38bd191",
+      "toSide": "left"
+    },
+    {
+      "id": "343fc1a937464b1c",
+      "styleAttributes": {},
+      "fromNode": "a1db9579d38bd191",
+      "fromSide": "right",
+      "toNode": "4b683642f82ec537",
+      "toSide": "bottom",
+      "toEnd": "none"
+    },
+    {
+      "id": "947844c15a65a233",
+      "styleAttributes": {},
+      "fromNode": "cfd84160ec9a1f05",
+      "fromSide": "right",
+      "toNode": "9cfc0ef9b133c9bc",
+      "toSide": "left"
+    },
+    {
+      "id": "9dbf13afe01bafa2",
+      "styleAttributes": {},
+      "fromNode": "9cfc0ef9b133c9bc",
+      "fromSide": "bottom",
+      "toNode": "8c060a6950a17163",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "3b28bf720fabab9f",
+      "styleAttributes": {},
+      "fromNode": "cfd84160ec9a1f05",
+      "fromSide": "bottom",
+      "toNode": "21c1d78db40df0bb",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "2b4ff30c846b1a4c",
+      "styleAttributes": {},
+      "fromNode": "9cfc0ef9b133c9bc",
+      "fromSide": "bottom",
+      "toNode": "10c772fd74460fa4",
+      "toSide": "right"
+    },
+    {
+      "id": "b098de294e0ac5fd",
+      "styleAttributes": {},
+      "fromNode": "2b71c9f0e4b7dc9d",
+      "fromSide": "bottom",
+      "toNode": "f0667aa5cf78012a",
+      "toSide": "left"
+    },
+    {
+      "id": "027442fb1c3158ac",
+      "styleAttributes": {},
+      "fromNode": "5f2a47a967529a0f",
+      "fromSide": "bottom",
+      "toNode": "f0667aa5cf78012a",
+      "toSide": "right"
+    },
+    {
+      "id": "ccb6052381d09600",
+      "styleAttributes": {},
+      "fromNode": "fa0c1262440b68b8",
+      "fromSide": "right",
+      "toNode": "3968ccae00313b0b",
+      "toSide": "left"
+    },
+    {
+      "id": "80be29c65ece5ae7",
+      "styleAttributes": {},
+      "fromNode": "33772debfcd98160",
+      "fromSide": "right",
+      "toNode": "3968ccae00313b0b",
+      "toSide": "left"
+    },
+    {
+      "id": "10d111ec528aaa41",
+      "styleAttributes": {},
+      "fromNode": "40230f1e2b61eb7e",
+      "fromSide": "left",
+      "toNode": "8af7dde60aa64d25",
+      "toSide": "top"
+    },
+    {
+      "id": "fdd24f63bf447413",
+      "styleAttributes": {},
+      "fromNode": "1c55a4afc61d6f86",
+      "fromSide": "left",
+      "toNode": "8af7dde60aa64d25",
+      "toSide": "bottom"
+    },
+    {
+      "id": "c4e7d0db5bfd15e0",
+      "styleAttributes": {
+        "path": "short-dashed"
+      },
+      "fromNode": "4c676ddff30bfbdd",
+      "fromSide": "top",
+      "toNode": "40230f1e2b61eb7e",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "cc3cbc1910a61840",
+      "styleAttributes": {},
+      "fromNode": "40230f1e2b61eb7e",
+      "fromSide": "left",
+      "toNode": "b8ac2aa77fb7e686",
+      "toSide": "left"
+    },
+    {
+      "id": "719ebeda98d17358",
+      "styleAttributes": {},
+      "fromNode": "08715cfa1aaa81ee",
+      "fromSide": "right",
+      "toNode": "e938995cdcaa4fae",
+      "toSide": "left"
+    },
+    {
+      "id": "904a50ec511861b7",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "fromNode": "29662d6037147f6a",
+      "fromSide": "left",
+      "toNode": "e938995cdcaa4fae",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "42eb8866633693a5",
+      "styleAttributes": {},
+      "fromNode": "c9097e44c4a214c2",
+      "fromSide": "bottom",
+      "toNode": "27457308b66bc26d",
+      "toSide": "top"
+    },
+    {
+      "id": "093761caf0d00277",
+      "styleAttributes": {},
+      "fromNode": "c9097e44c4a214c2",
+      "fromSide": "bottom",
+      "toNode": "90fa432c7ee56e2b",
+      "toSide": "top"
+    },
+    {
+      "id": "c34633f9756ad2be",
+      "styleAttributes": {},
+      "fromNode": "08715cfa1aaa81ee",
+      "fromSide": "right",
+      "toNode": "c9097e44c4a214c2",
+      "toSide": "left"
+    },
+    {
+      "id": "f0e0328a0812e6f4",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "fromNode": "082ff9175c2c0c51",
+      "fromSide": "left",
+      "toNode": "c9097e44c4a214c2",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "9b862e4480a07ee4",
+      "styleAttributes": {},
+      "fromNode": "c9097e44c4a214c2",
+      "fromSide": "top",
+      "toNode": "69a58a27be89a9c0",
+      "toSide": "bottom"
+    },
+    {
+      "id": "94b9bd610a91f582",
+      "styleAttributes": {},
+      "fromNode": "2cbdd63b13e21c6a",
+      "fromSide": "right",
+      "toNode": "da83c64c98bc7eb6",
+      "toSide": "right"
+    },
+    {
+      "id": "04abef0aa6975714",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "fromNode": "4bcff4ab0e450b05",
+      "fromSide": "left",
+      "toNode": "07ed05e95aa89727",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "2f3c135de3d4f21b",
+      "styleAttributes": {},
+      "fromNode": "08715cfa1aaa81ee",
+      "fromSide": "right",
+      "toNode": "07ed05e95aa89727",
+      "toSide": "left"
+    },
+    {
+      "id": "6a580b5e7d625bc9",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "fromNode": "4c676ddff30bfbdd",
+      "fromSide": "left",
+      "toNode": "f46b2bd5ff3409df",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "e270b93628c5afb8",
+      "styleAttributes": {},
+      "fromNode": "302fa22107b03f68",
+      "fromSide": "bottom",
+      "toNode": "5c4a11acf2c3a63f",
+      "toSide": "top"
+    },
+    {
+      "id": "64a13e59b39107de",
+      "styleAttributes": {},
+      "fromNode": "302fa22107b03f68",
+      "fromSide": "bottom",
+      "toNode": "f195a0648fabe43b",
+      "toSide": "top"
+    },
+    {
+      "id": "70993d311991401f",
+      "styleAttributes": {},
+      "fromNode": "9cfc0ef9b133c9bc",
+      "fromSide": "right",
+      "toNode": "47d2391dbb41c642",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "b018866d7adfbff3",
+      "styleAttributes": {},
+      "fromNode": "12a3a20abc6c1a27",
+      "fromSide": "left",
+      "toNode": "f2b88ffe6f91650c",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "3d01cd301b84c8af",
+      "styleAttributes": {},
+      "fromNode": "3968ccae00313b0b",
+      "fromSide": "right",
+      "toNode": "19501bc6a7f4c265",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "f2022bcf4dea814c",
+      "styleAttributes": {},
+      "fromNode": "9c3544869e0ffcb1",
+      "fromSide": "bottom",
+      "toNode": "d54a4497e4ce00cf",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "c530e6d15b540e34",
+      "styleAttributes": {},
+      "fromNode": "d54a4497e4ce00cf",
+      "fromSide": "right",
+      "toNode": "19501bc6a7f4c265",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "91dc67ee1713c30a",
+      "styleAttributes": {},
+      "fromNode": "1c55a4afc61d6f86",
+      "fromSide": "bottom",
+      "toNode": "2abe7c5815cee2cf",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "3997d76424773cdf",
+      "styleAttributes": {},
+      "fromNode": "26e19fc7c2f8b850",
+      "fromSide": "bottom",
+      "toNode": "2abe7c5815cee2cf",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "0a0c3b16832a4fb4",
+      "styleAttributes": {},
+      "fromNode": "ec50ae6e4f5c209d",
+      "fromSide": "bottom",
+      "toNode": "58b6d23acf1a3f84",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "6942c28198b68405",
+      "styleAttributes": {
+        "path": "long-dashed"
+      },
+      "fromNode": "58b6d23acf1a3f84",
+      "fromSide": "right",
+      "toNode": "a3e57f3859ade622",
+      "toSide": "left",
+      "toEnd": "none"
+    },
+    {
+      "id": "e5e6303b67fee10c",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "fromNode": "4bcff4ab0e450b05",
+      "fromSide": "bottom",
+      "toNode": "8af6e9ed512d86bd",
+      "toSide": "top",
+      "toEnd": "none",
+      "label": "as opposed to"
+    },
+    {
+      "id": "0d446c4c714b06c9",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "fromNode": "08715cfa1aaa81ee",
+      "fromSide": "top",
+      "toNode": "7f59186da2a8c0f2",
+      "toSide": "bottom",
+      "toEnd": "none"
+    },
+    {
+      "id": "df85cce019927b94",
+      "styleAttributes": {},
+      "fromNode": "f1fc23b9485e6594",
+      "fromSide": "bottom",
+      "toNode": "ff24ab6b9b67b053",
+      "toSide": "top",
+      "toEnd": "none"
+    },
+    {
+      "id": "34ec3e24c1fe770d",
+      "styleAttributes": {},
+      "fromNode": "bb7e92c9d8e39836",
+      "fromSide": "top",
+      "toNode": "12645e83384094ae",
+      "toSide": "bottom",
+      "toEnd": "none"
+    },
+    {
+      "id": "3c49864c5c960efc",
+      "styleAttributes": {},
+      "fromNode": "f1fc23b9485e6594",
+      "fromSide": "top",
+      "toNode": "a7a4a9dc56fedd74",
+      "toSide": "bottom"
+    },
+    {
+      "id": "d63e5e84aa348b64",
+      "styleAttributes": {},
+      "fromNode": "64b60c520f4c74fe",
+      "fromSide": "top",
+      "toNode": "a7a4a9dc56fedd74",
+      "toSide": "bottom"
+    },
+    {
+      "id": "9dc6938d0060353d",
+      "styleAttributes": {},
+      "fromNode": "12645e83384094ae",
+      "fromSide": "right",
+      "toNode": "df7ec31bbd4e034e",
+      "toSide": "left"
+    },
+    {
+      "id": "dc2d92c766134a56",
+      "styleAttributes": {},
+      "fromNode": "12645e83384094ae",
+      "fromSide": "right",
+      "toNode": "99454436d2707c70",
+      "toSide": "left"
+    },
+    {
+      "id": "a397713b1dfe561e",
+      "styleAttributes": {
+        "path": "long-dashed"
+      },
+      "fromNode": "99454436d2707c70",
+      "fromSide": "right",
+      "toNode": "082ff9175c2c0c51",
+      "toSide": "left"
+    },
+    {
+      "id": "0a03697e9156ca40",
+      "styleAttributes": {},
+      "fromNode": "26291c9b2fc22148",
+      "fromSide": "right",
+      "toNode": "7eff63abf3ef49c4",
+      "toSide": "left",
+      "label": "standard\ndata\nstructure"
+    },
+    {
+      "id": "4cbef374091936f9",
+      "styleAttributes": {},
+      "fromNode": "7eff63abf3ef49c4",
+      "fromSide": "right",
+      "toNode": "082ff9175c2c0c51",
+      "toSide": "left"
+    },
+    {
+      "id": "f67bab2bce222bfc",
+      "styleAttributes": {},
+      "fromNode": "26291c9b2fc22148",
+      "fromSide": "bottom",
+      "toNode": "d1f147401f1cc12a",
+      "toSide": "left",
+      "label": "e.g. page size/data size"
+    },
+    {
+      "id": "17b25f15c184548d",
+      "styleAttributes": {},
+      "fromNode": "7eff63abf3ef49c4",
+      "fromSide": "bottom",
+      "toNode": "2e73b0d124170076",
+      "toSide": "top",
+      "label": "read amp optimal,\nwrite could be better"
+    },
+    {
+      "id": "d821dc7848be5693",
+      "styleAttributes": {},
+      "fromNode": "d1f147401f1cc12a",
+      "fromSide": "right",
+      "toNode": "2e73b0d124170076",
+      "toSide": "top"
+    },
+    {
+      "id": "8105c9935dc8698e",
+      "styleAttributes": {},
+      "fromNode": "456e750013fb820d",
+      "fromSide": "bottom",
+      "toNode": "b972507d8872e3aa",
+      "toSide": "top",
+      "label": "less propagating merges,\nslower lookup"
+    },
+    {
+      "id": "7ad843f39125c0dd",
+      "styleAttributes": {},
+      "fromNode": "26291c9b2fc22148",
+      "fromSide": "left",
+      "toNode": "707ef47441da69a5",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "f04924ed0bdf9600",
+      "styleAttributes": {},
+      "fromNode": "ff24ab6b9b67b053",
+      "fromSide": "bottom",
+      "toNode": "cecb8a167453c2ec",
+      "toSide": "right"
+    }
+  ],
+  "metadata": {}
+}

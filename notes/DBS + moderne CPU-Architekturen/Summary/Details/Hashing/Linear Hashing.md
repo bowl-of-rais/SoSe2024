@@ -26,7 +26,7 @@ gantt
 	section second halves
 	n+1: 0, 1
 	...: 0, 1
-	n + 2k - 2 - 1: 0, 1
+	n + k - 1: 0, 1
 ```
 
 | Advantages            | Disadvantages                   |

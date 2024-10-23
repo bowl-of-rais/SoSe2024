@@ -40,3 +40,5 @@ graph TD;
 - `S`: marker whether redirect target
 - `O`: offset
 - `L`: length
+
+> only 1 lvl of redirects to ensure constant access time and avoid evilshmevil cache misses
