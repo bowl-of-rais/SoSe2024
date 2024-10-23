@@ -1,0 +1,7 @@
+- builds on: probability theory, linalg, stochastics
+- bi-weekly homeworks: >= 40%
+	- projects: real data, analyze
+- also bonus: 0.3
+- final exam: >= 60% of grade
+- slides usually uploaded on moodle before
+- focus: time series - causal inference course before :'D

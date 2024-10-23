@@ -1,0 +1,9 @@
+
+
+```SQL
+SELECT S.X,
+	(SELECT COUNT(*)
+	FROM R
+	WHERE S.X = R.Y)
+FROM S
+```

@@ -1,0 +1,2 @@
+- requirements.txt for anaconda environment?
+- use cased versions
