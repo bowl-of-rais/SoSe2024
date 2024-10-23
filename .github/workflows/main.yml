@@ -1,20 +1,18 @@
-name: Build & deploy
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
+name: Deploy Quartz site to GitHub Pages
+ 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
-
+ 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+ 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
+  group: "pages"
+  cancel-in-progress: false
  
 jobs:
   build:
@@ -26,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Switching to quartz 🪴
+      - name: Checkout Quartz
         run: git checkout quartz-v4
       - name: Install Dependencies
         run: npm ci
@@ -36,7 +34,6 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: public
-
  
   deploy:
     needs: build
